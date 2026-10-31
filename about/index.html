@@ -1,0 +1,309 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="vi"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Về LENS — Nhìn Để Thấu Cảm | Film &amp; Event Agency</title>
+<!-- Google Fonts: Epilogue & Be Vietnam Pro -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Epilogue:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-lowest": "#ffffff",
+            "on-primary-container": "#563600",
+            "on-surface-variant": "#524534",
+            "on-secondary-fixed-variant": "#364d26",
+            "tertiary-fixed-dim": "#c2cc8b",
+            "surface-container": "#efeeeb",
+            "error-container": "#ffdad6",
+            "on-primary-fixed": "#291800",
+            "deep-wood": "#4D3827",
+            "error": "#ba1a1a",
+            "tertiary": "#5a632d",
+            "inverse-on-surface": "#f2f0ed",
+            "outline-variant": "#d7c3ad",
+            "surface-container-highest": "#e4e2df",
+            "inverse-primary": "#ffb954",
+            "on-secondary-container": "#50683d",
+            "on-primary": "#ffffff",
+            "on-surface": "#1b1c1a",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed": "#dee9a5",
+            "on-error-container": "#93000a",
+            "secondary-fixed-dim": "#b4cf9c",
+            "surface-bright": "#fbf9f6",
+            "secondary-fixed": "#cfebb6",
+            "primary-fixed-dim": "#ffb954",
+            "primary-fixed": "#ffddb4",
+            "on-background": "#1b1c1a",
+            "on-error": "#ffffff",
+            "soft-sunlight": "#F9E76D",
+            "on-tertiary": "#ffffff",
+            "surface-container-low": "#f5f3f0",
+            "on-tertiary-fixed": "#191e00",
+            "surface-dim": "#dbdad7",
+            "on-secondary-fixed": "#0c2001",
+            "surface": "#fbf9f6",
+            "tertiary-container": "#a4ae70",
+            "on-tertiary-fixed-variant": "#424b18",
+            "surface-variant": "#e4e2df",
+            "surface-tint": "#835500",
+            "inverse-surface": "#30312f",
+            "secondary": "#4d653b",
+            "on-tertiary-container": "#39410f",
+            "primary-container": "#e59807",
+            "background": "#fbf9f6",
+            "on-primary-fixed-variant": "#633f00",
+            "surface-container-high": "#eae8e5",
+            "cinema-earth": "#3A1F0D",
+            "primary": "#835500",
+            "secondary-container": "#cae6b1",
+            "outline": "#857461"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          spacing: {
+            "gutter-sm": "1rem",
+            "margin-mobile": "1.25rem",
+            "space-md": "1rem",
+            "gutter": "1.5rem",
+            "margin": "3rem",
+            "space-xl": "2.5rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem"
+          },
+          fontFamily: {
+            "label-lg": ["Be Vietnam Pro", "sans-serif"],
+            "body-md": ["Be Vietnam Pro", "sans-serif"],
+            "label-md": ["Be Vietnam Pro", "sans-serif"],
+            "body-sm": ["Be Vietnam Pro", "sans-serif"],
+            "headline-lg-mobile": ["Epilogue", "serif"],
+            "headline-md": ["Epilogue", "serif"],
+            "headline-sm": ["Epilogue", "serif"],
+            "display-hero": ["Epilogue", "serif"],
+            "display-hero-mobile": ["Epilogue", "serif"],
+            "headline-lg": ["Epilogue", "serif"],
+            "body-lg": ["Be Vietnam Pro", "sans-serif"],
+            "label-sm": ["Be Vietnam Pro", "sans-serif"]
+          },
+          fontSize: {
+            "label-lg": ["0.875rem", { lineHeight: "1.25rem", letterSpacing: "0.08em", fontWeight: "600" }],
+            "body-md": ["1rem", { lineHeight: "1.625rem", fontWeight: "400" }],
+            "label-md": ["0.75rem", { lineHeight: "1rem", letterSpacing: "0.1em", fontWeight: "600" }],
+            "body-sm": ["0.875rem", { lineHeight: "1.375rem", fontWeight: "400" }],
+            "headline-lg-mobile": ["1.875rem", { lineHeight: "2.375rem", fontWeight: "600" }],
+            "headline-md": ["1.75rem", { lineHeight: "2.25rem", fontWeight: "600" }],
+            "headline-sm": ["1.25rem", { lineHeight: "1.75rem", fontWeight: "600" }],
+            "display-hero": ["4.5rem", { lineHeight: "5rem", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "display-hero-mobile": ["2.75rem", { lineHeight: "3.25rem", letterSpacing: "-0.01em", fontWeight: "700" }],
+            "headline-lg": ["2.5rem", { lineHeight: "3rem", letterSpacing: "-0.015em", fontWeight: "600" }],
+            "body-lg": ["1.125rem", { lineHeight: "1.875rem", fontWeight: "400" }],
+            "label-sm": ["0.6875rem", { lineHeight: "0.875rem", letterSpacing: "0.12em", fontWeight: "500" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Film Grain Subtle Layer */
+    .bg-paper-texture {
+      background-color: #FAF8F5;
+      background-image: radial-gradient(rgba(77, 56, 39, 0.05) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+    .amber-shadow {
+      box-shadow: 0 12px 36px rgba(77, 56, 39, 0.07), 0 3px 12px rgba(229, 152, 7, 0.08);
+    }
+    .hotspot-ring {
+      box-shadow: 0 0 0 4px rgba(229, 152, 7, 0.25), 0 0 0 8px rgba(229, 152, 7, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-paper-texture text-on-surface antialiased selection:bg-primary-container selection:text-on-primary">
+<!-- TOP APP BAR (Global Navbar: Về LENS is ACTIVE) -->
+<header class="docked full-width top-0 sticky z-50 bg-surface/90 backdrop-blur-md shadow-sm border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-6 max-w-7xl mx-auto h-20">
+<a href="/" class="flex items-center gap-3 group focus:outline-none" aria-label="LENS Films and Events"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_7OXJoXfo0J4SPngVS4lC_-KgROJlG5dzTHfjArevDti8MauPb6wT7EeE6Y_xbwINpk72QhL1zajSSyg4g3Y7V1TV6Mrd9PXQseOGKvPzwHL_srhp67OpRhnojUkPeiQ7aFRGXj-29DDQZaXzgniNHsHn29u375qMqN_J-E-HfRrDJFdr9W6EHKYu3P8skrq636bGaZiCbhlmvrkLGkkOG6BJ8gkTBQvArl01mQ" alt="LENS Logo" class="w-10 h-10 object-contain flex-shrink-0"><div class="flex flex-col text-left"><div class="flex items-baseline"><span class="font-['Epilogue'] font-bold text-lg text-[#1C1917] tracking-tight">LENS</span> <span class="text-stone-500 font-semibold text-[10px] tracking-wider uppercase ml-1">• MÙA HÈ ƠI, Ở LẠI</span></div><p class="font-bold text-[9px] tracking-widest text-[#D97706] uppercase mt-0.5">FRAME THE MOMENT. TELL THE STORY.</p></div></a>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant pb-1 font-label-lg hover:text-primary transition-colors duration-200" href="/">Trang Chủ</a>
+<a class="text-on-surface-variant pb-1 font-label-lg hover:text-primary transition-colors duration-200" href="/films">4 Bộ Phim</a>
+<a class="text-on-surface-variant pb-1 font-label-lg hover:text-primary transition-colors duration-200" href="/schedule">Lịch Trình</a>
+<a class="text-on-surface-variant pb-1 font-label-lg hover:text-primary transition-colors duration-200" href="/merchandise">Cửa Hàng Mùa Hè</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg" href="/about">Về LENS</a>
+</nav>
+<div class="flex items-center gap-3">
+<a class="hidden sm:inline-flex items-center gap-2 bg-primary-container text-on-primary font-label-lg text-label-lg px-5 py-2.5 rounded-lg amber-shadow hover:bg-primary transition-colors duration-200 active:scale-[0.98]" href="/tickets">
+<span class="material-symbols-outlined text-[18px]">confirmation_number</span>
+<span class="">MUA VÉ</span>
+</a>
+<button class="w-9 h-9 rounded-full border border-stone-200 flex items-center justify-center text-stone-600 hover:text-stone-900 hover:border-stone-400 transition-colors" title="Tài khoản cá nhân" aria-label="Tài khoản cá nhân">
+  <span class="material-symbols-outlined text-[20px]">person</span>
+</button>
+</div>
+</div>
+</header>
+<!-- MAIN CANVAS -->
+<main class="w-full overflow-hidden">
+<!-- 1. HERO SECTION -->
+<section class="relative py-8 md:py-10 border-b border-stone-200/60"><div class="max-w-7xl mx-auto px-6"><div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center"><div class="lg:col-span-7 space-y-5"><div class="space-y-2"><span class="text-xs font-bold uppercase tracking-widest text-[#D97706] block">FILM &amp; EVENT AGENCY</span><h1 class="text-3xl md:text-4xl font-bold text-[#1C1917] tracking-tight leading-tight font-['Epilogue'] uppercase">VỀ LENS — NHÌN ĐỂ THẤU CẢM.</h1></div><p class="text-sm md:text-base text-stone-600 max-w-2xl leading-relaxed">LENS biến những câu chuyện điện ảnh thành những trải nghiệm mà khán giả có thể thực sự bước vào.</p><div class="p-4 border-l-4 border-primary-container bg-surface-container-low/60 rounded-r-lg space-y-1"><p class="text-sm md:text-base font-semibold text-[#1C1917] tracking-wide uppercase font-headline-sm">"FRAME THE MOMENT - TELL THE STORY"</p><p class="text-xs md:text-sm text-stone-600 leading-relaxed">Đóng khung khoảnh khắc — Kể tiếp câu chuyện</p></div><div class="pt-2 flex flex-wrap items-center gap-4"><a class="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-[#D97706] hover:bg-[#B45309] text-white text-sm font-semibold transition-colors shadow-sm" href="#vision"><span class="">Khám Phá Sứ Mệnh</span><span class="material-symbols-outlined text-[16px]">arrow_downward</span></a><a class="text-sm font-medium text-stone-700 underline decoration-1 underline-offset-4 hover:text-[#D97706] transition-colors" href="#dna">Brand DNA: L-E-N-S</a></div></div><div class="lg:col-span-5"><div class="relative mx-auto max-w-md aspect-[4/5] rounded-2xl overflow-hidden border border-stone-200/80 shadow-md bg-stone-100 p-2.5"><div class="relative w-full h-full rounded-xl overflow-hidden"><img class="w-full h-full object-cover" alt="LENS Brand Story Visual" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIhIXG2F_O0Q29hfVBIeTUcB3tgZ9dE497Qz4ZmUd7Z7bsRx-I751m0xPw07P0w73fs2MRvzV6CZlVlAj1fxxItftW8xKVp_8c6G7Mt-dsOuLXIz7kP98gQ2_pLC_kBn4y1G1F80JJo3uEID0sgK9WCCBVRCVsRM9F6zDmBoQS8D-IZgmYb4zz6h90ZBwJ_-hAT7o4Jzcl6ypoHM3CjTFovz7Cvb8W5tpiyg_tCq5ROrBPmGcztuJpxroiOKxvAcNZxrvnvm7WQpMesg"><div class="absolute inset-0 bg-gradient-to-t from-[#1C1917]/80 via-transparent to-transparent flex flex-col justify-end p-5 text-white"><span class="text-[11px] uppercase tracking-widest text-[#F9E76D] font-semibold">GÓC NHÌN ĐIỆN ẢNH</span><span class="text-sm font-medium text-stone-200 mt-0.5">Khung hình chuyển động &amp; Cảm xúc hoài niệm</span></div></div></div></div></div></div></section>
+<!-- 2. SECTION — WHO WE ARE (Khi Điện Ảnh Bước Ra Khỏi Màn Ảnh) -->
+<section class="py-8 md:py-10 bg-surface-container-low/40 border-b border-stone-200/60"><div class="max-w-7xl mx-auto px-6"><div class="mb-6"><span class="text-xs uppercase tracking-widest text-[#D97706] font-bold block mb-1.5">WHO WE ARE</span><h2 class="text-2xl font-bold font-headline-lg text-[#1C1917] tracking-tight">KHI ĐIỆN ẢNH BƯỚC RA KHỎI MÀN ẢNH.</h2></div><div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch"><div class="lg:col-span-7 bg-white p-6 md:p-8 rounded-2xl border border-stone-200/70 shadow-sm h-full flex flex-col justify-between"><div class="border-l-4 border-primary-container pl-5 space-y-3"><p class="text-sm md:text-base font-medium text-stone-800 leading-relaxed font-headline-sm">Với LENS, một câu chuyện không kết thúc khi màn hình tối lại. Nó có thể tiếp tục trong một không gian, một chuyển động của ánh sáng, một cuộc gặp gỡ, hay một khoảnh khắc mà khán giả thực sự bước vào.</p><p class="text-xs md:text-sm text-stone-600 leading-relaxed">Thay vì chỉ tái hiện những gì đã xuất hiện trên màn ảnh, LENS tìm cách chuyển tinh thần của câu chuyện thành một trải nghiệm có thể nhìn thấy, chạm vào và cảm nhận một cách trọn vẹn nhất.</p></div></div><div class="lg:col-span-5"><div class="bg-white border border-stone-200/70 p-6 md:p-8 rounded-2xl shadow-sm relative h-full flex flex-col justify-between"><div class="absolute -top-3 right-6 bg-[#1C1917] text-[#F9E76D] text-[11px] px-3 py-0.5 rounded font-semibold tracking-wider uppercase">CURATOR’S NOTE</div><blockquote class="text-base font-headline-sm text-[#1C1917] font-medium leading-relaxed">“Chúng tôi không chỉ dựng một sự kiện. Chúng tôi tạo một không gian để câu chuyện tiếp tục sống.”</blockquote><div class="mt-6 pt-4 border-t border-stone-100 flex items-center justify-between"><div><span class="text-xs text-stone-900 font-bold block">LENS Creative Ensemble</span><span class="text-[11px] text-stone-500">Saigon Screening Chapter</span></div><span class="material-symbols-outlined text-stone-400 text-xl">auto_stories</span></div></div></div></div></div></section>
+<!-- 3. SECTION — THE SYMBOL (Ý Nghĩa Logo) -->
+<section class="py-8 md:py-10 border-b border-stone-200/60"><div class="max-w-7xl mx-auto px-6"><div class="text-center max-w-3xl mx-auto mb-8"><span class="text-xs uppercase tracking-widest text-[#D97706] font-bold block mb-1">THE SYMBOL</span><h2 class="text-2xl font-bold font-headline-lg text-[#1C1917] tracking-tight">MỘT ỐNG KÍNH. MỘT ÁNH NHÌN.</h2><p class="text-xs md:text-sm text-stone-600 mt-2 leading-relaxed max-w-2xl mx-auto text-justify" style="text-align: justify; text-justify: inter-word;">Logo LENS là sự kết hợp giữa ống kính máy ảnh và con mắt: ống kính để nhìn thấy câu chuyện, con mắt để cảm nhận bằng cảm xúc — tạo nên triết lý: <span class="font-semibold text-stone-900">‘NHÌN ĐỂ THẤU CẢM.’</span></p></div><div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch max-w-5xl mx-auto"><div class="bg-white border border-stone-200/70 p-6 md:p-8 rounded-2xl text-center relative shadow-sm flex flex-col justify-between hover:border-amber-300 transition-colors"><div><div class="w-14 h-14 mx-auto mb-4 rounded-full bg-amber-50 border border-amber-200/60 flex items-center justify-center text-[#D97706]"><span class="material-symbols-outlined text-[28px]">camera</span></div><span class="text-[11px] uppercase tracking-widest text-stone-400 block mb-1 font-semibold">NGUYÊN THỂ I</span><h3 class="text-base font-bold text-[#1C1917] mb-1 font-headline-sm">ỐNG KÍNH (LENS)</h3><p class="text-sm text-[#D97706] font-medium">Nhìn thấy câu chuyện</p></div><span class="text-[11px] text-stone-400 uppercase tracking-widest mt-6 block font-bold">SEE</span></div><div class="bg-white border border-stone-200/70 p-6 md:p-8 rounded-2xl text-center relative shadow-sm flex flex-col justify-between hover:border-emerald-300 transition-colors"><div><div class="w-14 h-14 mx-auto mb-4 rounded-full bg-emerald-50 border border-emerald-200/60 flex items-center justify-center text-emerald-700"><span class="material-symbols-outlined text-[28px]">visibility</span></div><span class="text-[11px] uppercase tracking-widest text-stone-400 block mb-1 font-semibold">NGUYÊN THỂ II</span><h3 class="text-base font-bold text-[#1C1917] mb-1 font-headline-sm">MẮT (EYE)</h3><p class="text-sm text-emerald-700 font-medium">Cảm nhận câu chuyện</p></div><span class="text-[11px] text-stone-400 uppercase tracking-widest mt-6 block font-bold">FEEL</span></div><div class="bg-white border border-stone-200/70 p-6 md:p-8 rounded-2xl text-center relative shadow-sm flex flex-col justify-between hover:border-amber-300 transition-colors"><div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#D97706] text-white text-[10px] px-3 py-0.5 rounded uppercase tracking-wider font-bold shadow-sm">TRIẾT LÝ HỢP NHẤT</div><div><div class="flex items-center justify-center mb-4 mt-1"><div class="w-14 h-14 rounded-full bg-amber-50 border border-amber-200/60 flex items-center justify-center"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGo-dF76IGQIsQnhwymXMLNzZNxpGTMO0grrzDmGj_Y4MiWMFblweZUzUWnjwONYpavJHFnHEnJ6Ad_OQ6wxCkiJUNWNMoWATbca6f5dVn_lXCTdn8RqCSQAA8bfwYnvE7-4Q_KQVj8c8nrxtMfDXd8AhTkG1QobzNL7dYhTwXrVPVC-9lY6NLDLIEpbtU5XJVS4EbIsvo3JRdQd-fVhZAL2QbWWOqmW28hYI1Cw" alt="LENS Logo" class="h-10 w-auto object-contain"></div></div><span class="text-[11px] uppercase tracking-widest text-stone-400 block mb-1 font-semibold">KẾT TINH THƯƠNG HIỆU</span><h3 class="text-base font-bold text-[#1C1917] mb-1 font-headline-sm">LENS</h3><p class="text-sm text-[#D97706] font-medium">Nhìn để thấu cảm</p></div><span class="text-[11px] text-stone-400 uppercase tracking-widest mt-6 block font-bold">UNDERSTAND</span></div></div></div></section>
+<!-- 4. SECTION — TRIẾT LÝ THƯƠNG HIỆU (Quote Lớn) -->
+
+<!-- 5. SECTION — VISION / MISSION / GOAL (Sequence 01 - 02 - 03) -->
+<section class="py-8 md:py-10 border-b border-stone-200/60 bg-surface" id="vision"><div class="max-w-7xl mx-auto px-6"><div class="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-stone-200 gap-2"><div><span class="text-xs uppercase tracking-widest text-[#D97706] font-bold block mb-1">EDITORIAL SEQUENCE</span><h2 class="text-2xl font-bold font-headline-lg text-[#1C1917] tracking-tight">TẦM NHÌN, SỨ MỆNH &amp; MỤC TIÊU</h2></div><span class="text-xs text-stone-500 tracking-wider uppercase font-semibold">LENS STRATEGIC FRAMEWORK 2025–2030</span></div><div class="space-y-4"><div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center p-6 rounded-2xl bg-white border border-stone-200/80 shadow-sm"><div class="lg:col-span-4 flex items-center gap-5"><span class="text-4xl md:text-5xl font-headline-lg text-[#D97706] font-extrabold tracking-tight shrink-0">01</span><div class="border-l border-stone-200 pl-4"><span class="text-[11px] uppercase tracking-widest text-stone-400 block font-semibold">VISION</span><span class="text-base md:text-lg font-headline-sm text-stone-900 font-bold">TẦM NHÌN</span></div></div><div class="lg:col-span-8 space-y-1 border-t lg:border-t-0 lg:border-l border-stone-200 pt-3 lg:pt-0 lg:pl-6"><h3 class="text-base font-bold text-[#1C1917] font-headline-sm">BIẾN ĐIỆN ẢNH THÀNH TRẢI NGHIỆM.</h3><p class="text-xs md:text-sm text-stone-600 leading-relaxed">LENS muốn trở thành một Film &amp; Event Agency tiên phong trong việc biến những câu chuyện điện ảnh thành trải nghiệm thực tế.</p></div></div><div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center p-6 rounded-2xl bg-white border border-stone-200/80 shadow-sm"><div class="lg:col-span-4 flex items-center gap-5"><span class="text-4xl md:text-5xl font-headline-lg text-emerald-700 font-extrabold tracking-tight shrink-0">02</span><div class="border-l border-stone-200 pl-4"><span class="text-[11px] uppercase tracking-widest text-stone-400 block font-semibold">MISSION</span><span class="text-base md:text-lg font-headline-sm text-stone-900 font-bold">SỨ MỆNH</span></div></div><div class="lg:col-span-8 space-y-1 border-t lg:border-t-0 lg:border-l border-stone-200 pt-3 lg:pt-0 lg:pl-6"><h3 class="text-base font-bold text-[#1C1917] font-headline-sm">KỂ CHUYỆN BẰNG NHIỀU HƠN MỘT KHUNG HÌNH.</h3><p class="text-xs md:text-sm text-stone-600 leading-relaxed">LENS sử dụng ngôn ngữ của điện ảnh kết hợp với sức mạnh của sự kiện để tạo ra những trải nghiệm không chỉ đẹp về hình ảnh, mà còn có khả năng kết nối và chạm đến cảm xúc.</p></div></div><div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center p-6 rounded-2xl bg-white border border-stone-200/80 shadow-sm"><div class="lg:col-span-4 flex items-center gap-5"><span class="text-4xl md:text-5xl font-headline-lg text-stone-800 font-extrabold tracking-tight shrink-0">03</span><div class="border-l border-stone-200 pl-4"><span class="text-[11px] uppercase tracking-widest text-stone-400 block font-semibold">GOAL</span><span class="text-base md:text-lg font-headline-sm text-stone-900 font-bold">MỤC TIÊU</span></div></div><div class="lg:col-span-8 space-y-1 border-t lg:border-t-0 lg:border-l border-stone-200 pt-3 lg:pt-0 lg:pl-6"><h3 class="text-base font-bold text-[#1C1917] font-headline-sm">XÂY DỰNG MỘT NGÔN NGỮ TRẢI NGHIỆM RIÊNG.</h3><p class="text-xs md:text-sm text-stone-600 leading-relaxed">LENS hướng đến việc xây dựng những mô hình trải nghiệm điện ảnh có bản sắc riêng, đưa các giá trị trong tác phẩm đến gần hơn với khán giả, đặc biệt là thế hệ trẻ, đồng thời từng bước xây dựng LENS trở thành một thương hiệu nổi bật trong lĩnh vực trải nghiệm điện ảnh tại Việt Nam.</p></div></div></div></div></section>
+<!-- 6. TRANSITION SECTION (Cinematic Editorial Transition) -->
+
+<!-- 7. SECTION — BRAND DNA (Bốn Yếu Tố Tạo Nên LENS: L - E - N - S) -->
+<section class="py-8 md:py-10 border-b border-stone-200/60 bg-surface" id="dna"><div class="max-w-7xl mx-auto px-6"><div class="max-w-3xl mb-8"><span class="text-xs uppercase tracking-widest text-[#D97706] font-bold block mb-1.5">BRAND DNA</span><h2 class="text-2xl md:text-3xl font-bold font-headline-lg text-[#1C1917] tracking-tight leading-tight uppercase">FRAME THE MOMENT.<br>TELL THE STORY.</h2><p class="text-xs md:text-sm text-stone-600 mt-1">Không sử dụng khuôn mẫu thông thường — Bốn trụ cột được chắt lọc từ chính các ký tự nhận diện thương hiệu.</p></div><div class="space-y-4"><div class="group border border-stone-200/80 rounded-2xl bg-white p-6 shadow-sm hover:border-amber-300 transition-colors"><div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center"><div class="lg:col-span-3 flex items-center gap-4"><span class="text-5xl font-headline-lg text-[#D97706] font-black leading-none shrink-0">L</span><span class="material-symbols-outlined text-[#D97706] text-3xl hidden sm:block">light_mode</span></div><div class="lg:col-span-4"><span class="text-[11px] uppercase tracking-widest text-stone-400 block font-semibold">FACTOR 01</span><h3 class="text-base font-bold text-stone-900">LIGHT (ÁNH SÁNG)</h3><span class="text-xs text-[#D97706] tracking-wider uppercase font-semibold">Chùm sáng &amp; Khẩu độ</span></div><div class="lg:col-span-5 border-t lg:border-t-0 lg:border-l border-stone-200 pt-3 lg:pt-0 lg:pl-6 space-y-1"><p class="text-sm font-semibold text-[#1C1917] leading-relaxed">“Ánh sáng là cách một khoảnh khắc được nhìn thấy, được định hình và được ghi nhớ.”</p><p class="text-xs text-stone-600 leading-relaxed">Ánh sáng sân khấu, góc hắt hoàng hôn và vệt đèn máy chiếu định hình bầu không khí điện ảnh riêng biệt.</p></div></div></div><div class="group border border-stone-200/80 rounded-2xl bg-white p-6 shadow-sm hover:border-emerald-300 transition-colors"><div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center"><div class="lg:col-span-3 flex items-center gap-4"><span class="text-5xl font-headline-lg text-emerald-700 font-black leading-none shrink-0">E</span><span class="material-symbols-outlined text-emerald-700 text-3xl hidden sm:block">sentiment_satisfied</span></div><div class="lg:col-span-4"><span class="text-[11px] uppercase tracking-widest text-stone-400 block font-semibold">FACTOR 02</span><h3 class="text-base font-bold text-stone-900">EMOTION (CẢM XÚC)</h3><span class="text-xs text-emerald-700 tracking-wider uppercase font-semibold">Góc cận &amp; Tương phản</span></div><div class="lg:col-span-5 border-t lg:border-t-0 lg:border-l border-stone-200 pt-3 lg:pt-0 lg:pl-6 space-y-1"><p class="text-sm font-semibold text-[#1C1917] leading-relaxed">“Cảm xúc là điều khiến một trải nghiệm không chỉ được nhìn thấy, mà còn được ghi nhớ.”</p><p class="text-xs text-stone-600 leading-relaxed">Góc cận vào ánh mắt người xem, những xúc cảm chạm sâu trong từng nốt nhạc hoài niệm.</p></div></div></div><div class="group border border-stone-200/80 rounded-2xl bg-white p-6 shadow-sm hover:border-stone-400 transition-colors"><div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center"><div class="lg:col-span-3 flex items-center gap-4"><span class="text-5xl font-headline-lg text-stone-800 font-black leading-none shrink-0">N</span><span class="material-symbols-outlined text-stone-700 text-3xl hidden sm:block">movie</span></div><div class="lg:col-span-4"><span class="text-[11px] uppercase tracking-widest text-stone-400 block font-semibold">FACTOR 03</span><h3 class="text-base font-bold text-stone-900">NARRATIVE (CÂU CHUYỆN)</h3><span class="text-xs text-stone-600 tracking-wider uppercase font-semibold">Mạch phim &amp; Hồi ức</span></div><div class="lg:col-span-5 border-t lg:border-t-0 lg:border-l border-stone-200 pt-3 lg:pt-0 lg:pl-6 space-y-1"><p class="text-sm font-semibold text-[#1C1917] leading-relaxed">“Mỗi trải nghiệm cần một mạch kể, một lý do để bắt đầu và một điều để người xem mang theo khi kết thúc.”</p><p class="text-xs text-stone-600 leading-relaxed">Từng phân đoạn sự kiện là một chương sách tiếp diễn, tôn trọng cốt truyện nguyên bản.</p></div></div></div><div class="group border border-stone-200/80 rounded-2xl bg-white p-6 shadow-sm hover:border-amber-300 transition-colors"><div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center"><div class="lg:col-span-3 flex items-center gap-4"><span class="text-5xl font-headline-lg text-[#D97706] font-black leading-none shrink-0">S</span><span class="material-symbols-outlined text-[#D97706] text-3xl hidden sm:block">deck</span></div><div class="lg:col-span-4"><span class="text-[11px] uppercase tracking-widest text-stone-400 block font-semibold">FACTOR 04</span><h3 class="text-base font-bold text-stone-900">SPACE (KHÔNG GIAN)</h3><span class="text-xs text-[#D97706] tracking-wider uppercase font-semibold">Thực cảnh &amp; Kiến trúc</span></div><div class="lg:col-span-5 border-t lg:border-t-0 lg:border-l border-stone-200 pt-3 lg:pt-0 lg:pl-6 space-y-1"><p class="text-sm font-semibold text-[#1C1917] leading-relaxed">“Không gian là nơi câu chuyện từ một ý tưởng trở thành một trải nghiệm mà người xem có thể bước vào.”</p><p class="text-xs text-stone-600 leading-relaxed">Thiết kế hiện trường nhập vai, vật liệu mộc, cây cỏ và lối đi đưa người tham dự lạc vào bối cảnh thật.</p></div></div></div></div></div></section>
+<!-- 8. SECTION — SLOGAN (Tối Giản & Mạnh Mẽ) -->
+<section class="py-10 md:py-12 bg-surface-container-low/40 border-b border-stone-200/60 text-center"><div class="max-w-4xl mx-auto px-6 space-y-4"><span class="text-xs uppercase tracking-widest text-[#D97706] font-bold block">OUR PHILOSOPHY</span><h2 class="text-2xl md:text-4xl font-headline-lg text-[#1C1917] font-extrabold tracking-tight leading-tight uppercase">FRAME THE MOMENT.<br>TELL THE STORY.</h2><div class="w-16 h-0.5 bg-[#D97706] mx-auto my-3"></div><p class="text-xs md:text-sm font-medium text-stone-600 tracking-wide">Khoảnh khắc được đóng khung. Câu chuyện được tiếp tục.</p></div></section>
+<!-- 9. SECTION — EVENT DIRECTOR (Creative Leadership) -->
+
+<!-- 10. ENDING BRAND STATEMENT & CTAs -->
+
+</main>
+<!-- FOOTER (Global Shared Component) -->
+<footer class="bg-[#1C1917] text-stone-300 w-full pt-12 pb-8 border-t border-stone-800">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-stone-800">
+      <!-- Cột 1: Thương hiệu LENS -->
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGo-dF76IGQIsQnhwymXMLNzZNxpGTMO0grrzDmGj_Y4MiWMFblweZUzUWnjwONYpavJHFnHEnJ6Ad_OQ6wxCkiJUNWNMoWATbca6f5dVn_lXCTdn8RqCSQAA8bfwYnvE7-4Q_KQVj8c8nrxtMfDXd8AhTkG1QobzNL7dYhTwXrVPVC-9lY6NLDLIEpbtU5XJVS4EbIsvo3JRdQd-fVhZAL2QbWWOqmW28hYI1Cw" alt="LENS Films and Events" class="w-10 h-10 object-contain">
+          <div>
+            <div class="font-headline-md font-bold text-lg text-white tracking-wider leading-none">LENS</div>
+            <div class="text-xs text-stone-400 font-medium mt-1">MÙA HÈ ƠI, Ở LẠI</div>
+          </div>
+        </div>
+        <p class="text-xs font-semibold tracking-wider text-[#D97706] mt-3 uppercase">FRAME THE MOMENT. TELL THE STORY.</p>
+        <p class="text-xs text-stone-400 leading-relaxed mt-2">
+          Chuỗi sự kiện trải nghiệm điện ảnh ngoài trời và triển lãm văn hóa hoài niệm được kiến tạo bởi LENS Creative Event Agency.
+        </p>
+        <div class="flex items-center gap-3 text-stone-400 mt-4">
+          <a href="#" aria-label="Website" class="hover:text-white transition-colors"><span class="material-symbols-outlined text-[18px]">language</span></a>
+          <a href="#" aria-label="Instagram" class="hover:text-white transition-colors"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a>
+          <a href="#" aria-label="Video" class="hover:text-white transition-colors"><span class="material-symbols-outlined text-[18px]">movie</span></a>
+          <a href="#" aria-label="TikTok" class="hover:text-white transition-colors"><span class="material-symbols-outlined text-[18px]">music_note</span></a>
+        </div>
+      </div>
+
+      <!-- Cột 2: ĐỊA ĐIỂM TỔ CHỨC -->
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-3">ĐỊA ĐIỂM TỔ CHỨC</h4>
+        <p class="text-xs font-semibold text-stone-200">White Palace Hoàng Văn Thụ</p>
+        <p class="text-xs text-stone-400 mt-1 leading-relaxed">194 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, TP. Hồ Chí Minh</p>
+        <p class="text-xs text-stone-400 mt-2">Giờ mở cửa: 09:30 – 22:30 Hàng ngày (16 &amp; 17/06/2027)</p>
+        <p class="text-xs text-stone-400 mt-1">Hotline: (+84) 28 3822 9999</p>
+        <p class="text-xs text-stone-400 mt-1">Email: contact@lenscreative.vn</p>
+      </div>
+
+      <!-- Cột 3: ĐIỀU HƯỚNG SỰ KIỆN -->
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-3">ĐIỀU HƯỚNG SỰ KIỆN</h4>
+        <div class="flex flex-col space-y-2 text-xs text-stone-400">
+          <a href="/" class="hover:text-[#D97706] transition-colors">Trang Chủ</a>
+          <a href="/films" class="hover:text-[#D97706] transition-colors">4 Bộ Phim</a>
+          <a href="/schedule" class="hover:text-[#D97706] transition-colors">Lịch Trình Chi Tiết 2 Ngày</a>
+          <a href="/merchandise" class="hover:text-[#D97706] transition-colors">Cửa Hàng Quà Lưu Niệm</a>
+          <a href="/about" class="hover:text-[#D97706] transition-colors">Về LENS Creative</a>
+        </div>
+      </div>
+
+      <!-- Cột 4: QUY ĐỊNH & HỖ TRỢ -->
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-3">QUY ĐỊNH &amp; HỖ TRỢ</h4>
+        <div class="flex flex-col space-y-2 text-xs text-stone-400">
+          <a href="#" class="hover:text-[#D97706] transition-colors">Điều Khoản &amp; Đổi Trả Vé</a>
+          <a href="#" class="hover:text-[#D97706] transition-colors">Hướng Dẫn Check-in Sự Kiện</a>
+          <a href="#" class="hover:text-[#D97706] transition-colors">Quy Tắc Bản Quyền &amp; Tác Phẩm</a>
+          <a href="#" class="hover:text-[#D97706] transition-colors">Câu Hỏi Thường Gặp (FAQ)</a>
+          <a href="#" class="hover:text-[#D97706] transition-colors">Chính Sách Bảo Mật</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dải Footnote dưới cùng -->
+    <div class="pt-6 flex flex-col md:flex-row justify-between items-center text-[11px] text-stone-500 gap-4">
+      <div class="">© 2027 LENS CREATIVE EVENT COMPANY. TẤT CẢ QUYỀN ĐƯỢC BẢO LƯU.</div>
+      <div class="flex flex-wrap items-center gap-2">
+        <a href="#" class="hover:text-stone-400 transition-colors">CHÍNH SÁCH BẢO MẬT</a>
+        <span class="">•</span>
+        <a href="#" class="hover:text-stone-400 transition-colors">ĐIỀU KHOẢN DỊCH VỤ</a>
+        <span class="">•</span>
+        <span class="">AN AUDIOVISUAL HERITAGE INITIATIVE</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

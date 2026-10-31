@@ -1,0 +1,297 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="vi" style="width: 1280px; height: 3972px; overflow: hidden; position: relative;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>LENS — 4 BỘ PHIM | Mùa Hè Ơi, Ở Lại</title>
+<!-- Google Fonts: Epilogue & Be Vietnam Pro -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;family=Epilogue:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS with Forms & Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-error-container": "#93000a",
+            "secondary-fixed-dim": "#b4cf9c",
+            "surface": "#fbf9f6",
+            "on-surface": "#1b1c1a",
+            "surface-variant": "#e4e2df",
+            "on-tertiary": "#ffffff",
+            "on-secondary-fixed": "#0c2001",
+            "tertiary-fixed-dim": "#c2cc8b",
+            "outline": "#857461",
+            "surface-bright": "#fbf9f6",
+            "error-container": "#ffdad6",
+            "deep-wood": "#4D3827",
+            "on-tertiary-fixed": "#191e00",
+            "soft-sunlight": "#F9E76D",
+            "inverse-on-surface": "#f2f0ed",
+            "on-tertiary-container": "#39410f",
+            "on-surface-variant": "#524534",
+            "primary-fixed-dim": "#ffb954",
+            "primary": "#835500",
+            "tertiary-fixed": "#dee9a5",
+            "secondary-fixed": "#cfebb6",
+            "surface-tint": "#835500",
+            "on-primary-fixed": "#291800",
+            "secondary": "#4d653b",
+            "surface-dim": "#dbdad7",
+            "on-secondary-fixed-variant": "#364d26",
+            "cinema-earth": "#3A1F0D",
+            "secondary-container": "#cae6b1",
+            "tertiary-container": "#a4ae70",
+            "on-tertiary-fixed-variant": "#424b18",
+            "on-primary-container": "#563600",
+            "surface-container-highest": "#e4e2df",
+            "on-secondary": "#ffffff",
+            "inverse-surface": "#30312f",
+            "on-secondary-container": "#50683d",
+            "primary-container": "#e59807",
+            "tertiary": "#5a632d",
+            "on-primary": "#ffffff",
+            "on-error": "#ffffff",
+            "background": "#fbf9f6",
+            "on-primary-fixed-variant": "#633f00",
+            "surface-container-low": "#f5f3f0",
+            "surface-container-high": "#eae8e5",
+            "error": "#ba1a1a",
+            "primary-fixed": "#ffddb4",
+            "on-background": "#1b1c1a",
+            "surface-container-lowest": "#ffffff",
+            "inverse-primary": "#ffb954",
+            "outline-variant": "#d7c3ad",
+            "surface-container": "#efeeeb"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "gutter-sm": "1rem",
+            "gutter": "1.5rem",
+            "margin": "3rem",
+            "margin-mobile": "1.25rem",
+            "space-xl": "2.5rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "label-md": ["Be Vietnam Pro"],
+            "headline-md": ["Epilogue"],
+            "label-sm": ["Be Vietnam Pro"],
+            "body-lg": ["Be Vietnam Pro"],
+            "display-hero-mobile": ["Epilogue"],
+            "headline-lg": ["Epilogue"],
+            "headline-sm": ["Epilogue"],
+            "label-lg": ["Be Vietnam Pro"],
+            "body-sm": ["Be Vietnam Pro"],
+            "headline-lg-mobile": ["Epilogue"],
+            "display-hero": ["Epilogue"],
+            "body-md": ["Be Vietnam Pro"]
+          },
+          "fontSize": {
+            "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.1em", "fontWeight": "600" }],
+            "headline-md": ["1.75rem", { "lineHeight": "2.25rem", "fontWeight": "600" }],
+            "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.12em", "fontWeight": "500" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.875rem", "fontWeight": "400" }],
+            "display-hero-mobile": ["2.75rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-lg": ["2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }],
+            "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }],
+            "headline-lg-mobile": ["1.875rem", { "lineHeight": "2.375rem", "fontWeight": "600" }],
+            "display-hero": ["4.5rem", { "lineHeight": "5rem", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-md": ["1rem", { "lineHeight": "1.625rem", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .paper-texture {
+      background-color: #fbf9f6;
+      background-image: radial-gradient(rgba(77, 56, 39, 0.04) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+    .sunlight-glow {
+      box-shadow: 0 8px 30px rgba(77, 56, 39, 0.08), 0 2px 8px rgba(229, 152, 7, 0.06);
+    }
+    .dashed-perforation {
+      background-image: repeating-linear-gradient(to bottom, #4D3827 0, #4D3827 5px, transparent 5px, transparent 10px);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary selection:text-surface paper-texture min-h-screen flex flex-col justify-between">
+<!-- ==================== 1. GLOBAL NAVBAR ==================== -->
+<header class="docked full-width top-0 sticky z-50 bg-surface/90 backdrop-blur-md shadow-sm border-b border-outline-variant/30"><div class="flex justify-between items-center w-full px-gutter max-w-7xl mx-auto h-20">
+  <!-- Logo LENS Brand Anchor -->
+  <a class="flex items-center gap-3 active:scale-[0.98] transition-transform duration-150" href="/"><img alt="LENS Logo" class="w-10 h-10 object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLMYt0IimBKnG9r8ap5MuJYWqWOJ--UmYHWp4fOqrjm_9ki_cCFVtJ97hNZm58IzcjKLH30aYCiLfUe9FkCQtJJwiR3Cl882sXLMWNszdHTboq2LtQkjY31Mio5xnilrtxCgV2T-iPOKu2-CqjmhCmeTTRFD4utfrzUEcOy73lOHFTsWEsGZwIBgQgZ__wtFvvu6Dv7pZbOVBJb6u9KBbL_bH0n0qGRU4mV6uzZA"><div class="flex flex-col"><div class="flex items-center leading-none"><span class="font-['Epilogue'] font-bold text-lg text-[#1C1917] tracking-tight">LENS</span><span class="text-stone-500 font-semibold text-[10px] tracking-wider uppercase ml-1">• MÙA HÈ ƠI, Ở LẠI</span></div><p class="font-bold text-[9px] tracking-widest text-[#D97706] uppercase mt-0.5">FRAME THE MOMENT. TELL THE STORY.</p></div></a>
+  <!-- Desktop Navigation Menu (4 BỘ PHIM is ACTIVE) -->
+  <nav class="hidden md:flex items-center gap-8"><a class="text-on-surface-variant pb-1 font-label-lg hover:text-primary transition-colors duration-200" href="/">
+      Trang Chủ
+    </a>
+    
+    <a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg transition-colors duration-200" href="/films">
+      4 Bộ Phim
+    </a>
+    <a class="text-on-surface-variant pb-1 font-label-lg hover:text-primary transition-colors duration-200" href="/schedule">
+      Lịch Trình
+    </a>
+    <a class="text-on-surface-variant pb-1 font-label-lg hover:text-primary transition-colors duration-200" href="/merchandise">
+      Cửa Hàng Mùa Hè
+    </a>
+    <a class="text-on-surface-variant pb-1 font-label-lg hover:text-primary transition-colors duration-200" href="/about">
+      Về LENS
+    </a>
+  </nav>
+  <!-- CTA Action Button & Profile Icon -->
+  <div class="flex items-center gap-3">
+    <a class="bg-[#e59807] text-surface hover:bg-primary px-5 py-2.5 rounded font-label-lg shadow-sm flex items-center gap-2 active:scale-[0.98] transition-all duration-200 font-bold uppercase" href="/tickets"><span class="material-symbols-outlined text-lg" data-icon="confirmation_number">confirmation_number</span><span class="">MUA VÉ</span></a>
+    <button class="w-9 h-9 rounded-full border border-stone-200 flex items-center justify-center text-stone-600 hover:text-stone-900 hover:border-stone-400 transition-colors" title="Tài khoản cá nhân" aria-label="Tài khoản cá nhân">
+  <span class="material-symbols-outlined text-[20px]">person</span>
+</button>
+  </div>
+</div></header>
+<!-- ==================== 2. HERO SECTION ==================== -->
+<section class="relative py-8 border-b border-outline-variant/30 overflow-hidden"><div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-soft-sunlight/20 blur-3xl pointer-events-none rounded-full"></div><div class="max-w-7xl mx-auto px-6 relative z-10"><div class="flex flex-col items-center text-center max-w-4xl mx-auto"><h1 class="text-4xl font-extrabold font-['Epilogue',serif] text-[#1C1917] tracking-tight mb-3">4 BỘ PHIM — 4 MIỀN KÝ ỨC</h1><p class="text-base text-stone-700 font-['Inter',sans-serif] not-italic max-w-3xl leading-relaxed mb-4 text-justify" style="text-align: justify; text-justify: inter-word;">Từ những trang viết của <span class="text-[#1C1917] font-semibold">Nguyễn Nhật Ánh</span>, những câu chuyện về tuổi thơ, tình bạn và những rung&nbsp;động đầu đời đã bước lên màn ảnh qua nhiều thế hệ. Bốn tác phẩm được lựa chọn tại&nbsp;triển&nbsp;lãm là bốn&nbsp;lát&nbsp;cắt khác nhau của thế&nbsp;giới&nbsp;ấy.</p><div class="flex flex-wrap items-center justify-center gap-3 text-stone-700 text-xs font-medium uppercase font-['Inter',sans-serif]"></div></div></div></section>
+<!-- ==================== 3. TIMELINE SECTION: TỪ TRANG SÁCH ĐẾN MÀN ẢNH ==================== -->
+<section class="py-10 bg-surface-container-low border-b border-outline-variant/30"><div class="max-w-7xl mx-auto px-6"><div class="mb-6 max-w-4xl"><div class="inline-flex items-center gap-2 text-xs font-semibold text-[#D97706] tracking-widest uppercase mb-1.5 font-['Inter',sans-serif]"></div><h2 class="text-2xl font-bold font-['Epilogue',serif] text-[#1C1917] mb-2">TỪ TRANG SÁCH ĐẾN MÀN ẢNH</h2><p class="text-sm text-stone-700 font-['Inter',sans-serif] not-italic leading-relaxed">Mỗi câu chuyện bắt đầu trên trang giấy trước khi tìm thấy một hình hài khác trên màn ảnh. Những khoảng thời gian <br>dưới đây đánh dấu hành trình ấy — từ năm nguyên tác ra đời đến thời điểm câu chuyện được chuyển thể thành phim.</p></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"><div class="bg-surface p-6 rounded-lg border border-outline-variant/40 sunlight-glow flex flex-col justify-between relative group hover:border-primary transition-all duration-300"><div><div class="flex justify-between items-center mb-4"><span class="font-headline-sm text-headline-sm text-primary font-bold">01</span><span class="font-label-sm text-label-sm px-2.5 py-1 bg-surface-container rounded text-deep-wood border border-outline-variant/30">9 NĂM CÁCH BIỆT</span></div><h3 class="font-headline-sm text-headline-sm text-deep-wood mb-6">KÍNH VẠN HOA<br><br></h3><div class="space-y-4 relative pl-5 border-l-2 border-primary/30"><div class="relative"><span class="absolute -left-[27px] top-1 w-3 h-3 rounded-full bg-deep-wood ring-4 ring-surface"></span><span class="font-headline-sm text-headline-sm text-deep-wood font-bold block">1995</span><p class="font-body-sm text-body-sm text-on-surface-variant">Nguyên tác ra mắt</p></div><div class="relative pt-2"><span class="absolute -left-[27px] top-3 w-3 h-3 rounded-full bg-primary-container ring-4 ring-surface"></span><span class="font-headline-sm text-headline-sm text-primary font-bold block">2004</span><p class="font-body-sm text-body-sm text-on-surface-variant">Màn ảnh&nbsp;</p></div></div></div><div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between font-label-sm text-label-sm text-outline"><span class="">Đạo diễn: N.M.Chung &amp; Đ.P.Hải</span><span class="material-symbols-outlined text-sm" data-icon="tv">tv</span></div></div><div class="bg-surface p-6 rounded-lg border border-outline-variant/40 sunlight-glow flex flex-col justify-between relative group hover:border-primary transition-all duration-300"><div><div class="flex justify-between items-center mb-4"><span class="font-headline-sm text-headline-sm text-primary font-bold">02</span><span class="font-label-sm text-label-sm px-2.5 py-1 bg-surface-container rounded text-deep-wood border border-outline-variant/30">5 NĂM CÁCH BIỆT</span></div><h3 class="font-headline-sm text-headline-sm text-deep-wood mb-6">TÔI THẤY HOA VÀNG TRÊN CỎ XANH</h3><div class="space-y-4 relative pl-5 border-l-2 border-primary/30"><div class="relative"><span class="absolute -left-[27px] top-1 w-3 h-3 rounded-full bg-deep-wood ring-4 ring-surface"></span><span class="font-headline-sm text-headline-sm text-deep-wood font-bold block">2010</span><p class="font-body-sm text-body-sm text-on-surface-variant">Nguyên tác ra mắt</p></div><div class="relative pt-2"><span class="absolute -left-[27px] top-3 w-3 h-3 rounded-full bg-primary-container ring-4 ring-surface"></span><span class="font-headline-sm text-headline-sm text-primary font-bold block">2015</span><p class="font-body-sm text-body-sm text-on-surface-variant">Màn ảnh&nbsp;</p></div></div></div><div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between font-label-sm text-label-sm text-outline"><span class="">Đạo diễn: Victor Vũ</span><span class="material-symbols-outlined text-sm" data-icon="movie">movie</span></div></div><div class="bg-surface p-6 rounded-lg border border-outline-variant/40 sunlight-glow flex flex-col justify-between relative group hover:border-primary transition-all duration-300"><div><div class="flex justify-between items-center mb-4"><span class="font-headline-sm text-headline-sm text-primary font-bold">03</span><span class="font-label-sm text-label-sm px-2.5 py-1 bg-surface-container rounded text-deep-wood border border-outline-variant/30">29 NĂM CÁCH BIỆT</span></div><h3 class="font-headline-sm text-headline-sm text-deep-wood mb-6">MẮT BIẾC<br><br></h3><div class="space-y-4 relative pl-5 border-l-2 border-primary/30"><div class="relative"><span class="absolute -left-[27px] top-1 w-3 h-3 rounded-full bg-deep-wood ring-4 ring-surface"></span><span class="font-headline-sm text-headline-sm text-deep-wood font-bold block">1990</span><p class="font-body-sm text-body-sm text-on-surface-variant">Nguyên tác ra mắt</p></div><div class="relative pt-2"><span class="absolute -left-[27px] top-3 w-3 h-3 rounded-full bg-primary-container ring-4 ring-surface"></span><span class="font-headline-sm text-headline-sm text-primary font-bold block">2019</span><p class="font-body-sm text-body-sm text-on-surface-variant">Màn ảnh&nbsp;</p></div></div></div><div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between font-label-sm text-label-sm text-outline"><span class="">Đạo diễn: Victor Vũ</span><span class="material-symbols-outlined text-sm" data-icon="movie">movie</span></div></div><div class="bg-surface p-6 rounded-lg border border-outline-variant/40 sunlight-glow flex flex-col justify-between relative group hover:border-primary transition-all duration-300"><div><div class="flex justify-between items-center mb-4"><span class="font-headline-sm text-headline-sm text-primary font-bold">04</span><span class="font-label-sm text-label-sm px-2.5 py-1 bg-surface-container rounded text-deep-wood border border-outline-variant/30">8 NĂM CÁCH BIỆT</span></div><h3 class="font-headline-sm text-headline-sm text-deep-wood mb-6">NGÀY XƯA CÓ MỘT CHUYỆN TÌNH</h3><div class="space-y-4 relative pl-5 border-l-2 border-primary/30"><div class="relative"><span class="absolute -left-[27px] top-1 w-3 h-3 rounded-full bg-deep-wood ring-4 ring-surface"></span><span class="font-headline-sm text-headline-sm text-deep-wood font-bold block">2016</span><p class="font-body-sm text-body-sm text-on-surface-variant">Nguyên tác ra mắt</p></div><div class="relative pt-2"><span class="absolute -left-[27px] top-3 w-3 h-3 rounded-full bg-primary-container ring-4 ring-surface"></span><span class="font-headline-sm text-headline-sm text-primary font-bold block">2024</span><p class="font-body-sm text-body-sm text-on-surface-variant">Màn ảnh&nbsp;</p></div></div></div><div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between font-label-sm text-label-sm text-outline"><span class="">Đạo diễn: Trịnh Đình Lê Minh</span><span class="material-symbols-outlined text-sm" data-icon="movie">movie</span></div></div></div></div></section>
+<!-- ==================== 4. EDITORIAL ZIG-ZAG 4 PHIM ==================== -->
+<main class="py-10 space-y-12 max-w-7xl mx-auto px-6 overflow-hidden"><article class="relative"><div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-6 items-center"><div class="lg:col-span-7 relative group"><span class="absolute -top-14 left-4 font-display-hero text-8xl md:text-9xl text-deep-wood/5 font-extrabold select-none pointer-events-none -z-10">01</span><div class="relative rounded-lg overflow-hidden border border-deep-wood/20 sunlight-glow aspect-[16/10] bg-surface-container"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Warm nostalgic 35mm film still of a vintage 1990s Vietnamese school classroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDapiaU-Mpj1dvHjaogy74juti_K3LBKccMA--UCXVHklcfREVwQAPDSIJYVQxtfNpPVJ8S8XJY-kS_VdLhLm5pazVpZ9HfO4bFLxH82QnT6yxcs47iBJJ4VlEzK1-yGlTloMzvxMK26UP54E25gSeWIxatFZ4X9qWq918O2-TIRjn9KHr-XdjaFByYUS2LWAVtJoNbCBXa98ISkD_ZOzXFOiWbkVjECWJj_ZhmpTgrGsMQ6JVNXtLCGGHkFBwsaNZPgxfOO5DbmYwq"><div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-cinema-earth/80 via-cinema-earth/40 to-transparent text-surface"></div></div></div><div class="lg:col-span-5 flex flex-col justify-center items-start text-left"><div class="inline-flex items-center gap-2 mb-2"><span class="px-2.5 py-0.5 rounded bg-[#D97706]/10 text-[#D97706] text-xs font-semibold tracking-wider uppercase font-['Inter',sans-serif]">TRUYỀN HÌNH • 2004 • CHAPTER 01</span></div><h2 class="text-2xl font-bold font-['Epilogue',serif] text-[#1C1917] tracking-tight">KÍNH VẠN HOA</h2><p class="text-base font-medium font-['Inter',sans-serif] not-italic text-[#D97706] mt-1 mb-3">“Những ngày tuổi nhỏ đầy màu sắc”</p><p class="text-sm text-stone-700 font-['Inter',sans-serif] not-italic leading-relaxed mb-5 text-justify w-full">‘Kính vạn hoa’ là bộ truyện dài nhiều tập của Nguyễn Nhật Ánh, xoay quanh cuộc sống học đường của ba người bạn Quý Ròm, Tiểu Long và Hạnh. Mỗi câu chuyện mở ra một cuộc phiêu lưu nhỏ với những trò nghịch ngợm, tình bạn và những bài học rất gần gũi của tuổi học trò. Tập đầu tiên của bộ truyện ra mắt năm 1995. Đến năm 2004, ‘Kính vạn hoa’ được chuyển thể thành phim truyền hình dưới sự đạo diễn của Nguyễn Minh Chung và Đỗ Phú Hải. Hình ảnh Quý Ròm, Tiểu Long và Hạnh trên màn ảnh sau đó trở thành một phần ký ức tuổi thơ của nhiều khán giả.</p><div class="w-full bg-surface-container p-4 rounded-lg border-l-4 border-[#D97706] border-t border-r border-b border-outline-variant/30 space-y-2 text-xs font-['Inter',sans-serif] text-stone-800"><div class="flex justify-between items-center border-b border-outline-variant/20 pb-1.5 gap-4"><span class="text-stone-500 uppercase flex-shrink-0">NGUYÊN TÁC</span><span class="font-semibold text-[#1C1917] text-right">Nguyễn Nhật Ánh</span></div><div class="flex justify-between items-center border-b border-outline-variant/20 pb-1.5 gap-4"><span class="text-stone-500 uppercase flex-shrink-0">RA MẮT NGUYÊN TÁC</span><span class="font-semibold text-[#1C1917] text-right whitespace-nowrap">1995&nbsp;(Tập&nbsp;đầu&nbsp;tiên)</span></div><div class="flex justify-between items-center border-b border-outline-variant/20 pb-1.5 gap-4"><span class="text-stone-500 uppercase flex-shrink-0">CHUYỂN THỂ</span><span class="font-semibold text-[#1C1917] text-right">2004</span></div><div class="flex justify-between items-center border-b border-outline-variant/20 pb-1.5 gap-4"><span class="text-stone-500 uppercase flex-shrink-0">ĐẠO DIỄN</span><span class="font-semibold text-[#1C1917] text-right">Nguyễn&nbsp;Minh&nbsp;Chung, Đỗ&nbsp;Phú&nbsp;Hải</span></div><div class="flex justify-between items-center pt-0.5 gap-4"><span class="text-stone-500 uppercase flex-shrink-0">ĐỊNH DẠNG</span><span class="font-semibold text-secondary text-right">Phim truyền hình</span></div></div></div></div></article><article class="relative"><div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-6"><div class="lg:col-span-5 order-2 lg:order-1 flex flex-col justify-center"><div class="inline-flex items-center gap-2 mb-2"><span class="px-2.5 py-0.5 rounded bg-[#D97706]/10 text-[#D97706] text-xs font-semibold tracking-wider uppercase font-['Inter',sans-serif]">ĐIỆN ẢNH • 2015 • CHAPTER 02</span></div><h2 class="text-2xl font-bold font-['Epilogue',serif] text-[#1C1917] tracking-tight">TÔI THẤY HOA VÀNG TRÊN CỎ XANH</h2><p class="text-base font-medium font-['Inter',sans-serif] not-italic text-[#D97706] mt-1 mb-3">“Một miền tuổi thơ trong trẻo”</p><p class="text-sm text-stone-700 font-['Inter',sans-serif] not-italic leading-relaxed mb-5 text-justify w-full" style="text-align: justify; text-justify: inter-word;">‘Tôi thấy hoa vàng trên cỏ xanh’ đưa người đọc trở về một làng quê Việt Nam cuối những năm 1980 qua câu chuyện của hai anh em Thiều và Tường. Tuổi thơ hiện lên qua tình anh em, những trò chơi trẻ nhỏ, những rung động đầu đời, cả yêu thương, ghen tị và những lần trưởng thành từ sai lầm. Nguyên tác ra mắt năm 2010. Năm 2015, tác phẩm được đạo diễn Victor Vũ chuyển thể thành phim điện ảnh, đưa thế giới tuổi thơ trong truyện lên màn ảnh qua những khung hình đậm chất làng quê Việt Nam.</p><div class="bg-surface-container p-4 rounded-lg border-l-4 border-[#D97706] border-t border-r border-b border-outline-variant/30 space-y-2 text-xs font-['Inter',sans-serif] text-stone-800"><div class="flex justify-between border-b border-outline-variant/20 pb-1.5"><span class="text-stone-500 uppercase">NGUYÊN TÁC</span><span class="font-semibold text-[#1C1917]">Nguyễn Nhật Ánh</span></div><div class="flex justify-between border-b border-outline-variant/20 pb-1.5"><span class="text-stone-500 uppercase">RA MẮT NGUYÊN TÁC</span><span class="font-semibold text-[#1C1917]">2010</span></div><div class="flex justify-between border-b border-outline-variant/20 pb-1.5"><span class="text-stone-500 uppercase">CHUYỂN THỂ</span><span class="font-semibold text-[#1C1917]">2015</span></div><div class="flex justify-between border-b border-outline-variant/20 pb-1.5"><span class="text-stone-500 uppercase">ĐẠO DIỄN</span><span class="font-semibold text-[#1C1917]">Victor Vũ</span></div><div class="flex justify-between pt-0.5"><span class="text-stone-500 uppercase">ĐỊNH DẠNG</span><span class="font-semibold text-secondary">Phim điện ảnh</span></div></div></div><div class="lg:col-span-7 order-1 lg:order-2 relative group"><span class="absolute -top-14 right-4 font-display-hero text-8xl md:text-9xl text-deep-wood/5 font-extrabold select-none pointer-events-none -z-10">02</span><div class="relative rounded-lg overflow-hidden border border-deep-wood/20 sunlight-glow aspect-[16/10] bg-surface-container"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Immersive cinematic exhibition room recreating the Vietnamese rural meadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA83VQzlke5Z1EeXFNLptaidKg4KEarqCqtVVYsZtosCPqSDHdzOJP38oZ-C7RQ6dkWOjaSnDlKcEqkUjesH5ZXLHb7pY0RkLHKXaM3JUgXnGuqihUfENkCUL2LhWy_e7r0apUOF2MliwbFItW0qMs2V7GaIF3GrSQo0HMpaaYYcBIQXGg0hHz_4enz69zfWyWacPf2Qcj99LQMdrIa3oLwUCljM7nOONLIrxqgsRd9IvO09-FKtF027CvGscTAf9oRtxVFg18qn3g2"><div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-cinema-earth/80 via-cinema-earth/40 to-transparent text-surface"></div></div></div></div></article><article class="relative"><div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-6"><div class="lg:col-span-7 relative group"><span class="absolute -top-14 left-4 font-display-hero text-8xl md:text-9xl text-deep-wood/5 font-extrabold select-none pointer-events-none -z-10">03</span><div class="relative rounded-lg overflow-hidden border border-deep-wood/20 sunlight-glow aspect-[16/10] bg-surface-container"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Cinematic still inspired by Mắt Biếc" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjMpk9Cou-h-76ARV4m-Nx8OCh9t2i0Jwc-Nl2b1YfZzSCvbBpz4to6srQkZYQtXxafMDpxo4Gpo9U0XQcAlxZ79kJM-PPj7Sz2-3pSOvCMXLhoibPdDo12K32sYlhWCrUSFwelz82pwMwjOwZe9H1y3thWHPI4Evh7VjVjaYbB1YsgDde7ZLnulgcXb7wFZnLSf0k5U6N5Z6g8c6gFtBT-k5gd8PX_PUxRp8h7BZ77QHlTej4YOxBHK0jysWetLtk1eb8llMnXq2v"><div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-cinema-earth/80 via-cinema-earth/40 to-transparent text-surface"></div></div></div><div class="lg:col-span-5 flex flex-col justify-center"><div class="inline-flex items-center gap-2 mb-2"><span class="px-2.5 py-0.5 rounded bg-[#D97706]/10 text-[#D97706] text-xs font-semibold tracking-wider uppercase font-['Inter',sans-serif]">ĐIỆN ẢNH • 2019 • CHAPTER 03</span></div><h2 class="text-2xl font-bold font-['Epilogue',serif] text-[#1C1917] tracking-tight">MẮT BIẾC</h2><p class="text-base font-medium font-['Inter',sans-serif] not-italic text-[#D97706] mt-1 mb-3">“Một tình yêu đi qua những năm tháng”</p><p class="text-sm text-stone-700 font-['Inter',sans-serif] not-italic leading-relaxed mb-5 text-justify w-full" style="text-align: justify; text-justify: inter-word;">‘Mắt biếc’ kể về Ngạn và tình cảm anh dành cho Hà Lan từ những năm tháng tuổi thơ ở làng Đo Đo cho đến khi cả hai trưởng thành. Khi Hà Lan rời quê lên thành phố, con đường của hai người dần rẽ sang những hướng khác, nhưng tình cảm của Ngạn vẫn ở lại. Nguyên tác ra mắt năm 1990. Năm 2019, ‘Mắt biếc’ được đạo diễn Victor Vũ chuyển thể thành phim điện ảnh. Bộ phim tiếp tục đưa những hình ảnh quen thuộc trong thế giới Nguyễn Nhật Ánh — làng quê, trường học, tuổi trẻ và tình yêu đầu đời — lên màn ảnh rộng.</p><div class="bg-surface-container p-4 rounded-lg border-l-4 border-[#D97706] border-t border-r border-b border-outline-variant/30 space-y-2 text-xs font-['Inter',sans-serif] text-stone-800"><div class="flex justify-between border-b border-outline-variant/20 pb-1.5"><span class="text-stone-500 uppercase">NGUYÊN TÁC</span><span class="font-semibold text-[#1C1917]">Nguyễn Nhật Ánh</span></div><div class="flex justify-between border-b border-outline-variant/20 pb-1.5"><span class="text-stone-500 uppercase">RA MẮT NGUYÊN TÁC</span><span class="font-semibold text-[#1C1917]">1990</span></div><div class="flex justify-between border-b border-outline-variant/20 pb-1.5"><span class="text-stone-500 uppercase">CHUYỂN THỂ</span><span class="font-semibold text-[#1C1917]">2019</span></div><div class="flex justify-between border-b border-outline-variant/20 pb-1.5"><span class="text-stone-500 uppercase">ĐẠO DIỄN</span><span class="font-semibold text-[#1C1917]">Victor Vũ</span></div><div class="flex justify-between pt-0.5"><span class="text-stone-500 uppercase">ĐỊNH DẠNG</span><span class="font-semibold text-secondary">Phim điện ảnh</span></div></div></div></div></article><article class="relative"><div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-6"><div class="lg:col-span-5 order-2 lg:order-1 flex flex-col justify-center"><div class="inline-flex items-center gap-2 mb-2"><span class="px-2.5 py-0.5 rounded bg-[#D97706]/10 text-[#D97706] text-xs font-semibold tracking-wider uppercase font-['Inter',sans-serif]">ĐIỆN ẢNH • 2024 • CHAPTER 04</span></div><h2 class="text-2xl font-bold font-['Epilogue',serif] text-[#1C1917] tracking-tight">NGÀY XƯA CÓ MỘT CHUYỆN TÌNH</h2><p class="text-base font-medium font-['Inter',sans-serif] not-italic text-[#D97706] mt-1 mb-3">“Những điều đã qua và những điều chưa kịp nói”</p><p class="text-sm text-stone-700 font-['Inter',sans-serif] not-italic leading-relaxed mb-5 text-justify w-full" style="text-align: justify; text-justify: inter-word;">‘Ngày xưa có một chuyện tình’ theo chân Vinh, Miền và Phúc từ những năm tháng tuổi thơ đến khi trưởng thành. Tình bạn giữa ba người dần đi qua những rung động đầu đời, lựa chọn, chia xa và những biến chuyển của cuộc sống. Nguyên tác ra mắt năm 2016. Năm 2024, tác phẩm được chuyển thể thành phim điện ảnh dưới sự đạo diễn của Trịnh Đình Lê Minh, tiếp tục đưa một câu chuyện trưởng thành của Nguyễn Nhật Ánh từ trang sách lên màn ảnh.</p><div class="bg-surface-container p-4 rounded-lg border-l-4 border-[#D97706] border-t border-r border-b border-outline-variant/30 space-y-2 text-xs font-['Inter',sans-serif] text-stone-800"><div class="flex justify-between border-b border-outline-variant/20 pb-1.5"><span class="text-stone-500 uppercase">NGUYÊN TÁC</span><span class="font-semibold text-[#1C1917]">Nguyễn Nhật Ánh</span></div><div class="flex justify-between border-b border-outline-variant/20 pb-1.5"><span class="text-stone-500 uppercase">RA MẮT NGUYÊN TÁC</span><span class="font-semibold text-[#1C1917]">2016</span></div><div class="flex justify-between border-b border-outline-variant/20 pb-1.5"><span class="text-stone-500 uppercase">CHUYỂN THỂ</span><span class="font-semibold text-[#1C1917]">2024</span></div><div class="flex justify-between border-b border-outline-variant/20 pb-1.5"><span class="text-stone-500 uppercase">ĐẠO DIỄN</span><span class="font-semibold text-[#1C1917]">Trịnh Đình Lê Minh</span></div><div class="flex justify-between pt-0.5"><span class="text-stone-500 uppercase">ĐỊNH DẠNG</span><span class="font-semibold text-secondary">Phim điện ảnh</span></div></div></div><div class="lg:col-span-7 order-1 lg:order-2 relative group"><span class="absolute -top-14 right-4 font-display-hero text-8xl md:text-9xl text-deep-wood/5 font-extrabold select-none pointer-events-none -z-10">04</span><div class="relative rounded-lg overflow-hidden border border-deep-wood/20 sunlight-glow aspect-[16/10] bg-surface-container"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Nostalgic Vietnamese rural cinematic frame depicting three close youth friends" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD0n74bAyBpll947WsTNZuciAljLV7cviSNtOp3Be-cJqL41LuQbOTIJtfwKTQ1ngABL_51JgDpFdHxCdSIw8Zt-G13fHyqXsxDuAqr_7CkI01tAGv7EaSo_YEUqV8rsVWaBCjltAaUW4IxBK-aoP3udrxIBbebiDO6T7w71KruiQ8t5jpPf1G9V7ZA0WB-NWwlcgC6KQg91kb1Xwds0IkmoR8jquhPUspHGX8IsREiyhb3GQ6cG6DG-icP1o0Sa_Ie0QJ38qYqCey"></div></div></div></article></main>
+<!-- ==================== 5. TRANSITION SECTION — TỪ MÀN ẢNH ĐẾN KHÔNG GIAN TRIỂN LÃM ==================== -->
+<section class="py-10 bg-cinema-earth text-surface relative overflow-hidden"><div class="absolute top-0 right-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div><div class="max-w-7xl mx-auto px-6 relative z-10"><div class="max-w-3xl mx-auto mb-8"><span class="text-xs font-semibold text-[#D97706] tracking-widest uppercase block mb-2 font-['Inter',sans-serif] text-center">TỪ MÀN ẢNH ĐẾN KHÔNG GIAN</span><h2 class="text-2xl md:text-3xl font-bold font-['Epilogue',serif] text-surface tracking-tight mb-3 text-center">BỐN CÂU CHUYỆN. BỐN KHÔNG GIAN.</h2><p class="text-sm md:text-base text-surface-container-highest/80 font-['Inter',sans-serif] not-italic leading-relaxed text-center w-full" style="text-justify: inter-word; text-align: justify !important;">Bốn tác phẩm được đặt cạnh nhau để nhìn lại hành trình từ văn học đến điện ảnh. Tại triển lãm, mỗi câu chuyện sẽ trở thành một không gian riêng để người xem bước vào, quan sát, tương tác và tìm lại một phần ký ức của chính mình.</p></div><div class="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-5xl mx-auto mb-8 relative"><div class="bg-surface-container-lowest/5 p-6 rounded-lg border border-surface-container-lowest/15 backdrop-blur-sm text-center relative flex flex-col items-center"><div class="w-12 h-12 rounded-full bg-soft-sunlight/10 text-soft-sunlight flex items-center justify-center mb-4"><span class="material-symbols-outlined text-2xl" data-icon="menu_book">menu_book</span></div><span class="font-label-sm text-label-sm text-soft-sunlight tracking-wider uppercase font-semibold mb-1">GIAI ĐOẠN 01</span><h3 class="font-headline-sm text-headline-sm text-surface mb-2">TRANG SÁCH</h3><p class="font-body-sm text-body-sm text-surface-container-highest/70">Nguyên tác văn học<br>Nguyễn Nhật Ánh&nbsp;</p><p class=""></p></div><div class="bg-surface-container-lowest/5 p-6 rounded-lg border border-surface-container-lowest/15 backdrop-blur-sm text-center relative flex flex-col items-center"><div class="w-12 h-12 rounded-full bg-soft-sunlight/10 text-soft-sunlight flex items-center justify-center mb-4"><span class="material-symbols-outlined text-2xl" data-icon="videocam">videocam</span></div><span class="font-label-sm text-label-sm text-soft-sunlight tracking-wider uppercase font-semibold mb-1">GIAI ĐOẠN 02</span><h3 class="font-headline-sm text-headline-sm text-surface mb-2">MÀN ẢNH</h3><p class="font-body-sm text-body-sm text-surface-container-highest/70">Những khung hình điện ảnh và truyền hình</p></div><div class="bg-surface-container-lowest/5 p-6 rounded-lg border border-surface-container-lowest/15 backdrop-blur-sm text-center relative flex flex-col items-center"><div class="w-12 h-12 rounded-full bg-soft-sunlight/10 text-soft-sunlight flex items-center justify-center mb-4"><span class="material-symbols-outlined text-2xl" data-icon="view_in_ar">view_in_ar</span></div><span class="font-label-sm text-label-sm text-soft-sunlight tracking-wider uppercase font-semibold mb-1">GIAI ĐOẠN 03</span><h3 class="font-headline-sm text-headline-sm text-surface mb-2">KHÔNG GIAN</h3><p class="font-body-sm text-body-sm text-surface-container-highest/70">Tái hiện thực cảnh và<br>&nbsp;bối cảnh đặc sắc</p></div><div class="bg-surface-container-lowest/5 p-6 rounded-lg border border-primary-container/40 backdrop-blur-sm text-center relative flex flex-col items-center ring-1 ring-primary-container/30"><div class="w-12 h-12 rounded-full bg-primary-container/20 text-soft-sunlight flex items-center justify-center mb-4"><span class="material-symbols-outlined text-2xl" data-icon="blur_on">blur_on</span></div><span class="font-label-sm text-label-sm text-soft-sunlight tracking-wider uppercase font-semibold mb-1">GIAI ĐOẠN 04</span><h3 class="font-headline-sm text-headline-sm text-surface mb-2">ĐA GIÁC QUAN</h3><p class="font-body-sm text-body-sm text-surface-container-highest/70">Ánh sáng 360°, âm thanh và chạm xúc cảm</p></div></div><div class="flex flex-col sm:flex-row items-center justify-center gap-4"><a class="w-full sm:w-auto px-8 py-4 rounded bg-primary-container text-cinema-earth hover:bg-soft-sunlight transition-all duration-200 font-label-lg text-label-lg font-bold flex items-center justify-center gap-3 shadow-lg" href="/"><span class="">KHÁM PHÁ 4 KHÔNG GIAN TRIỂN LÃM</span><span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span></a><a class="w-full sm:w-auto px-8 py-4 rounded border border-surface/30 hover:border-soft-sunlight text-surface hover:text-soft-sunlight transition-all duration-200 font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2" href="/tickets"><span class="material-symbols-outlined text-lg" data-icon="confirmation_number">confirmation_number</span><span class="">ĐẶT VÉ TRẢI NGHIỆM NGAY</span></a></div></div></section>
+<!-- ==================== 6. FOOTER ==================== -->
+<footer class="bg-[#1C1917] text-stone-300 border-t border-[#332D29]">
+  <div class="w-full py-12 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <!-- Cột 1: Logo & Thương hiệu -->
+    <div class="flex flex-col">
+      
+      <p class="text-sm text-stone-400 font-['Inter',sans-serif] leading-relaxed mb-4">194 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, TP. Hồ Chí Minh</p>
+      <span class="text-xs font-semibold tracking-wider text-[#D97706] mb-5 font-['Inter',sans-serif]">
+        FRAME THE MOMENT. TELL THE STORY.
+      </span>
+      <!-- Cụm icon mạng xã hội tròn -->
+      <div class="flex items-center gap-3"><a href="#" class="w-9 h-9 rounded-full bg-stone-800 border border-stone-700 hover:border-[#D97706] hover:bg-[#D97706] text-stone-300 hover:text-white flex items-center justify-center transition-colors" aria-label="Website"><span class="material-symbols-outlined text-base">language</span></a><a href="#" class="w-9 h-9 rounded-full bg-stone-800 border border-stone-700 hover:border-[#D97706] hover:bg-[#D97706] text-stone-300 hover:text-white flex items-center justify-center transition-colors" aria-label="Instagram"><span class="material-symbols-outlined text-base">photo_camera</span></a><a href="#" class="w-9 h-9 rounded-full bg-stone-800 border border-stone-700 hover:border-[#D97706] hover:bg-[#D97706] text-stone-300 hover:text-white flex items-center justify-center transition-colors" aria-label="Phim"><span class="material-symbols-outlined text-base">movie</span></a><a href="#" class="w-9 h-9 rounded-full bg-stone-800 border border-stone-700 hover:border-[#D97706] hover:bg-[#D97706] text-stone-300 hover:text-white flex items-center justify-center transition-colors" aria-label="Âm nhạc"><span class="material-symbols-outlined text-base">music_note</span></a></div>
+    </div>
+
+    <!-- Cột 2: Địa điểm tổ chức -->
+    <div class="flex flex-col">
+      <span class="text-xs font-semibold text-stone-400 uppercase tracking-wider block mb-4 font-['Inter',sans-serif]">ĐỊA ĐIỂM TỔ CHỨC</span>
+      <div class="space-y-3 text-sm text-stone-300 font-['Inter',sans-serif]">
+        <p class="font-semibold text-white">White Palace Hoàng Văn Thụ</p>
+        <p class="text-stone-400 leading-relaxed">194 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, TP. Hồ Chí Minh</p>
+        <p class="text-stone-400">Giờ mở cửa: 09:30 – 22:30 Hàng ngày (16 &amp; 17/06/2027)</p>
+        <div class="pt-2 space-y-1.5">
+          <p class="flex items-center gap-2 text-stone-300">
+            <span class="material-symbols-outlined text-sm text-[#D97706]">call</span>
+            Hotline: (+84) 28 3822 9999
+          </p>
+          <p class="flex items-center gap-2 text-stone-300">
+            <span class="material-symbols-outlined text-sm text-[#D97706]">mail</span>
+            Email: contact@lenscreative.vn
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cột 3: Điều hướng sự kiện -->
+    <div class="flex flex-col">
+      <span class="text-xs font-semibold text-stone-400 uppercase tracking-wider block mb-4 font-['Inter',sans-serif]">ĐIỀU HƯỚNG SỰ KIỆN</span>
+      <ul class="space-y-2.5 text-sm font-['Inter',sans-serif]">
+        <li class=""><a class="text-stone-400 hover:text-white transition-colors duration-200" href="/">Trang Chủ</a></li>
+        <li class=""><a class="text-[#D97706] hover:text-white transition-colors duration-200 font-medium" href="/films">4 Bộ Phim</a></li>
+        <li class=""><a class="text-stone-400 hover:text-white transition-colors duration-200" href="/schedule">Lịch Trình Chi Tiết 2 Ngày</a></li>
+        <li class=""><a class="text-stone-400 hover:text-white transition-colors duration-200" href="/merchandise">Cửa Hàng Quà Lưu Niệm</a></li>
+        <li class=""><a class="text-stone-400 hover:text-white transition-colors duration-200" href="/about">Về LENS Creative</a></li>
+      </ul>
+    </div>
+
+    <!-- Cột 4: Quy định & Hỗ trợ -->
+    <div class="flex flex-col">
+      <span class="text-xs font-semibold text-stone-400 uppercase tracking-wider block mb-4 font-['Inter',sans-serif]">QUY ĐỊNH &amp; HỖ TRỢ</span>
+      <ul class="space-y-2.5 text-sm font-['Inter',sans-serif]">
+        <li class=""><a class="text-stone-400 hover:text-white transition-colors duration-200" href="#">Điều Khoản &amp; Đổi Trả Vé</a></li>
+        <li class=""><a class="text-stone-400 hover:text-white transition-colors duration-200" href="#">Hướng Dẫn Check-in Sự Kiện</a></li>
+        <li class=""><a class="text-stone-400 hover:text-white transition-colors duration-200" href="#">Quy Tắc Bản Quyền &amp; Tác Phẩm</a></li>
+        <li class=""><a class="text-stone-400 hover:text-white transition-colors duration-200" href="#">Câu Hỏi Thường Gặp (FAQ)</a></li>
+        <li class=""><a class="text-stone-400 hover:text-white transition-colors duration-200" href="#">Chính Sách Bảo Mật</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Footnote Bar -->
+  <div class="border-t border-[#292524] py-6 px-6 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left text-xs text-stone-500 font-['Inter',sans-serif]">
+    <p class="">© 2027 LENS CREATIVE EVENT COMPANY. TẤT CẢ QUYỀN ĐƯỢC BẢO LƯU.</p>
+    <div class="flex flex-wrap items-center justify-center gap-4 tracking-wider uppercase text-stone-500">
+      <a class="hover:text-stone-300 transition-colors" href="#">CHÍNH SÁCH BẢO MẬT</a>
+      <span class="">•</span>
+      <a class="hover:text-stone-300 transition-colors" href="#">ĐIỀU KHOẢN DỊCH VỤ</a>
+      <span class="">•</span>
+      <span class="">AN AUDIOVISUAL HERITAGE INITIATIVE</span>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

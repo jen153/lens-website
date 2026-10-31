@@ -1,0 +1,538 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="vi"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="web_standard" name="shell-type">
+<title>LENS • MÙA HÈ ƠI, Ở LẠI — Trải Nghiệm Điện Ảnh &amp; Nghệ Thuật</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;family=Epilogue:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#fbf9f6",
+            "surface-container-low": "#f5f3f0",
+            "surface-container": "#efeeeb",
+            "surface-container-high": "#eae8e5",
+            "primary": "#e59807",
+            "primary-dark": "#c27c00",
+            "cinema-earth": "#2a2118",
+            "deep-wood": "#4D3827",
+            "secondary": "#4d653b",
+            "secondary-container": "#cae6b1",
+            "soft-sunlight": "#F9E76D",
+            "soft-cream": "#FAF8F5",
+            "on-surface": "#1b1c1a",
+            "on-surface-variant": "#524534",
+            "outline-variant": "#d7c3ad"
+          },
+          fontFamily: {
+            "display": ["Epilogue", "sans-serif"],
+            "body": ["Be Vietnam Pro", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      background-color: #fbf9f6;
+      color: #1b1c1a;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, .font-heading {
+      font-family: 'Epilogue', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-surface antialiased selection:bg-[#e59807] selection:text-[#2a2118]">
+<!-- ==========================================
+       1. HEADER & NAVBAR
+       ========================================== -->
+<header class="sticky top-0 z-50 bg-[#FAF8F5]/95 backdrop-blur-md border-b border-[#d7c3ad]/50 h-20 w-full transition-all">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 h-full flex items-center justify-between">
+<!-- Brand Logo -->
+<a aria-label="Trang chủ LENS" class="flex items-center gap-3 group focus:outline-none" href="/"><img alt="LENS Logo" class="w-10 h-10 object-contain flex-shrink-0 transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOaMuxnhQlbRd2rm-y7ECfbScxTEfaY-qg4JOB8znjGvXTo-6LunhMMfAn9Ygfy1b-S8JGi0q1bXuVkyq8D8WsH6-41NU2veIVWgARSEBGn9HVOqmgCbFUkDiiyphLr9JhDOj6vdA2DKigKK0-_YuEKwmUAh0l4VaFc_AM3XbQHkuRC3ebGeFriPlhWvrQjPG1FEe_MNZJU7-cHlFxhRSMqFeapF_rRfakEWL2_A"><div class="flex flex-col text-left"><div class="flex items-baseline leading-none"><span class="font-['Epilogue'] font-bold text-lg text-[#1C1917] tracking-tight">LENS</span><span class="text-stone-500 font-semibold text-[10px] tracking-wider uppercase ml-1">• MÙA HÈ ƠI, Ở LẠI</span></div><p class="font-bold text-[9px] tracking-widest text-[#D97706] uppercase mt-0.5">FRAME THE MOMENT. TELL THE STORY.</p></div></a>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 transition-colors" href="/">Trang Chủ</a>
+<a class="text-deep-wood/80 hover:text-primary transition-colors pb-1" href="/films">4 Bộ Phim</a>
+<a class="text-deep-wood/80 hover:text-primary transition-colors pb-1" href="/schedule">Lịch Trình</a>
+<a class="text-deep-wood/80 hover:text-primary transition-colors pb-1" href="/merchandise">Cửa Hàng Mùa Hè</a>
+<a class="text-deep-wood/80 hover:text-primary transition-colors pb-1" href="/about">Về LENS</a>
+</nav>
+<!-- Action Button -->
+<div class="flex items-center gap-3">
+<a class="bg-primary hover:bg-primary-dark text-white font-bold text-sm tracking-wide px-5 py-2.5 rounded-lg shadow-sm hover:shadow-md transition-all transform hover:-translate-y-0.5 inline-flex items-center gap-1.5" href="/tickets">
+<span class="material-symbols-outlined text-[18px]">confirmation_number</span>
+<span class="">MUA VÉ</span>
+</a>
+<button class="w-9 h-9 rounded-full border border-stone-200 flex items-center justify-center text-stone-600 hover:text-stone-900 hover:border-stone-400 transition-colors ml-2" title="Tài khoản cá nhân" aria-label="Tài khoản cá nhân"><span class="material-symbols-outlined text-[20px]">person</span></button></div>
+</div>
+</header>
+<main class="w-full">
+<!-- ==========================================
+         2. HERO SECTION
+         ========================================== -->
+<section class="relative w-full overflow-hidden bg-gradient-to-b from-[#FAF8F5] via-[#fbf9f6] to-[#f5f3f0] py-12 md:py-16 lg:py-20 border-b border-[#d7c3ad]/30">
+<!-- Glow ambient background -->
+<div class="absolute -top-24 -left-24 w-96 h-96 bg-soft-sunlight/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 right-0 w-[500px] h-[500px] bg-[#e59807]/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 lg:pl-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center lg:gap-6">
+<!-- Left Content -->
+<div class="lg:col-span-7 flex flex-col justify-center p-6">
+<!-- Eyebrow Tag -->
+
+<!-- Main Heading -->
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-cinema-earth tracking-tight leading-[1.1] mb-6">
+              MÙA HÈ ƠI, <br>
+<span class="text-primary">Ở LẠI.</span>
+</h1>
+<!-- Subtitle & Body -->
+<p class="text-base sm:text-lg text-deep-wood/90 leading-relaxed font-normal mb-8 max-w-xl text-justify pr-6" style="letter-spacing: 0.005em; line-height: 1.8;">Một không gian điện ảnh hoài niệm được kiến tạo kỳ công, lấy cảm hứng bất tận từ thế giới văn học giàu chất thơ của nhà văn <span class="font-semibold text-cinema-earth">Nguyễn Nhật Ánh</span>. Đây không đơn thuần là một buổi triển lãm, mà là tấm vé thời gian đưa bạn trở về trọn vẹn với miền ký ức vàng son của tuổi hoa niên — nơi có cánh đồng hoa vàng bát ngát dưới vòm trời xanh thẳm, tiếng ve ngân ran rát trưa hè, chiếc xe đạp cọc cạch qua từng nẻo đường làng Đo Đo và những rung động đầu đời vụng dại nhưng vẹn nguyên trong trẻo. Hãy bước chậm lại giữa lòng phố thị, lắng nghe nhịp thở của năm tháng cũ và cùng LENS giữ lại những khoảnh khắc thanh xuân đẹp đẽ nhất.</p>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center gap-4 mb-10">
+<a class="px-7 py-3.5 bg-primary hover:bg-primary-dark text-white font-bold text-sm tracking-wide rounded-lg shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 uppercase inline-flex items-center gap-2" href="/tickets">
+<span class="material-symbols-outlined text-[20px]">local_activity</span>
+<span class="">ĐẶT VÉ TRẢI NGHIỆM</span>
+</a>
+<a class="px-6 py-3.5 bg-white hover:bg-surface-container-low text-deep-wood border border-[#d7c3ad] font-semibold text-sm tracking-wide rounded-lg transition-all shadow-sm inline-flex items-center gap-2" href="#bon-cau-chuyen">
+<span class="">Khám Phá Câu Chuyện</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+</div>
+<!-- Event Quick Info Bar -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 rounded-xl bg-white/80 backdrop-blur-sm border border-[#d7c3ad]/40 shadow-sm items-stretch p-5"><div class="flex flex-col justify-between sm:border-r border-[#d7c3ad]/30 px-4 py-2 flex-1 min-w-0">
+  <span class="text-[11px] font-bold uppercase tracking-wider text-secondary flex items-center gap-1.5 whitespace-nowrap">
+    <span class="material-symbols-outlined text-[16px]">pin_drop</span> ĐỊA ĐIỂM
+  </span>
+  <span class="font-bold text-xs sm:text-[13px] md:text-sm text-cinema-earth mt-1.5 leading-snug">
+    White Palace <br>Hoàng Văn Thụ
+  </span>
+</div>
+<div class="flex flex-col justify-between sm:border-r border-[#d7c3ad]/30 px-4 py-2 flex-1 min-w-0">
+  <span class="text-[11px] font-bold uppercase tracking-wider text-secondary flex items-center gap-1.5 whitespace-nowrap">
+    <span class="material-symbols-outlined text-[16px]">schedule</span> THỜI GIAN
+  </span>
+  <span class="font-bold text-xs sm:text-[13px] md:text-sm text-cinema-earth mt-1.5 leading-snug">
+    09:30 - 22:30 <br>Hằng ngày
+  </span>
+</div>
+<div class="flex flex-col justify-between px-4 py-2 flex-1 min-w-0">
+  <span class="text-[11px] font-bold uppercase tracking-wider text-secondary flex items-center gap-1.5 whitespace-nowrap">
+    <span class="material-symbols-outlined text-[16px]">crop_free</span> QUY MÔ
+  </span>
+  <span class="font-bold text-xs sm:text-[13px] md:text-sm text-cinema-earth mt-1.5 leading-snug">
+    1.200m² <br>Không gian triển lãm
+  </span>
+</div></div>
+</div>
+<!-- Right Poster Visual -->
+<div class="lg:col-span-5 flex justify-center items-center"><div class="relative w-full max-w-[430px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/80 bg-stone-100 group"><img alt="Poster Mùa Hè Ơi, Ở Lại - Nguyễn Nhật Ánh" class="w-full h-auto max-h-[580px] object-contain rounded-2xl transform transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFx1u4bUTuWwkKlMfg5Wpsd8FNua4o28jm7_jJetYj-kj-CKoTiT-OmFv7RvwXPt3EGOysUzmx8B0Mj7n5H3CuuQV1hfvlfki6dM3iv1pryTARP_8eu8p6ncRUWDOoUAnil2cyaLarE8-NbiN3RnCsZZ442sMfg5DR3ZS0TKEc9xK1B3t-8tVKIdYOajgxL9x5uUXWgTtFbq12qoyfE9nA7mJpBHQb7xDfRKhnSA"><div class="absolute inset-0 bg-gradient-to-t from-cinema-earth/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5"><p class="text-white text-xs font-medium tracking-wide">Poster chính thức: Mùa Hè Ơi, Ở Lại — Triển lãm nghệ thuật 2027</p></div></div></div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+         3. SECTION: 4 KHÔNG GIAN PHIM & TRIỂN LÃM TÁC PHẨM
+         ========================================== -->
+<section class="py-16 md:py-24 bg-surface" id="bon-cau-chuyen">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="text-center max-w-3xl mx-auto mb-14">
+
+<h2 class="text-3xl md:text-4xl font-display font-bold text-cinema-earth tracking-tight">
+            BỐN CÂU CHUYỆN. MỘT MÙA HÈ.
+          </h2>
+<div class="w-14 h-1 bg-primary mx-auto my-3.5 rounded-full"></div>
+<p class="text-deep-wood/80 text-sm md:text-base leading-relaxed">
+            Mỗi không gian là một hành trình thị giác và xúc cảm được phục dựng tỉ mỉ từ các thước phim<br>&nbsp;kinh điển cùng linh hồn trang sách Nguyễn Nhật Ánh.
+          </p>
+</div>
+<!-- 4 Film Showcase Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch"><!-- Card 1: Kính Vạn Hoa -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/40 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
+  <div class="relative h-52 overflow-hidden bg-cinema-earth flex-shrink-0">
+    <img alt="Kính Vạn Hoa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpFneX2O2Ps6nRSfrwOomFGPITzD09mJyuVjgfb6eHtym348xtPEvklp0NFT1GZnT0DyIFlp84Pc2YDFrykPeo_wOiTpLWINQbW6-PyWG698vFgxQw-PVKugGM8YFwib-YnR9273yHHtqsv9nL7mDswId9OXJ6vgW8TaOg245Vz46f_WFIqLFdc-U5vM9qHKV7yUCBkyaVJqLhaE7hEl6XIFg3_BZmzMUanvlw8MehZve5yy_uE7mVSIFQ_-8JIO47l-lCZ-sAWL3X0Q">
+    <span class="absolute top-3 left-3 bg-cinema-earth/80 text-soft-sunlight text-[11px] font-bold px-2.5 py-1 rounded">REEL 01 • TUỔI HỌC TRÒ</span>
+  </div>
+  <div class="p-6 flex-1 flex flex-col justify-between">
+    <div class="flex flex-col mb-4">
+      <span class="text-xs font-semibold text-secondary uppercase tracking-wider block mb-1.5">Đạo diễn: Nguyễn Minh Chung</span>
+      <h3 class="font-display font-bold text-lg text-cinema-earth group-hover:text-primary transition-colors mb-2.5 min-h-[3.25rem] flex items-center leading-snug">KÍNH VẠN HOA</h3>
+      <p class="text-xs text-deep-wood/80 leading-relaxed text-justify min-h-[5.5rem]">
+        Căn gác nhỏ của bộ ba Quý Ròm, Tiểu Long, Nhỏ Hạnh với những thí nghiệm hóa học nổ tung tiếng cười và workshop tự tay làm chiếc kính vạn hoa tuổi thơ.
+      </p>
+    </div>
+    <blockquote class="italic text-[11px] text-primary-dark border-l-2 border-primary pl-4 pr-3 py-3 bg-[#fbf9f6] rounded-r-md block leading-relaxed text-justify min-h-[5.5rem] flex items-center mt-auto">
+      "Càng lớn lên, người ta lại càng thèm một chiếc vé để quay trở lại cái thời mà nỗi buồn chỉ ngắn bằng một buổi chiều, còn niềm vui thì kéo dài đến tận ngày hôm sau."
+    </blockquote>
+  </div>
+</div>
+
+<!-- Card 2: Mắt Biếc -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/40 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
+  <div class="relative h-52 overflow-hidden bg-cinema-earth flex-shrink-0">
+    <img alt="Mắt Biếc" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyazXVj3y8izf3RizzMAW5qSvRmp2HG5Qa59mIr8uJRsQDOduI6lK2n8s2St0SBKki77kYw7w4EuAH6ODOQSfFthQ5SYnxnP3W1DZoyr3LTTSpSdlm0ztSrIDQjrEtmLZ6VVLHFoGGVyFmYtyZYNc1K_S0N3ikBLPF749qUumJgHF9EnCPzuJWfNziUowWXHuFL3fg08n_eDUsWNe3P6YCZ14XuMlY5l12A9UDTshoNbPCLU3HM36H0wCv6jAyaN8XRcPPXzDDQWj2dA">
+    <span class="absolute top-3 left-3 bg-cinema-earth/80 text-soft-sunlight text-[11px] font-bold px-2.5 py-1 rounded">REEL 02 • TÌNH ĐẦU</span>
+  </div>
+  <div class="p-6 flex-1 flex flex-col justify-between">
+    <div class="flex flex-col mb-4">
+      <span class="text-xs font-semibold text-secondary uppercase tracking-wider block mb-1.5">Đạo diễn: Victor Vũ</span>
+      <h3 class="font-display font-bold text-lg text-cinema-earth group-hover:text-primary transition-colors mb-2.5 min-h-[3.25rem] flex items-center leading-snug">MẮT BIẾC</h3>
+      <p class="text-xs text-deep-wood/80 leading-relaxed text-justify min-h-[5.5rem]">
+        Làng Đo Đo mộc mạc, con đường đất quanh co, rừng sim tím biếc ngập tràn hoài niệm, tiếng đàn guitar bên gốc cây và ánh mắt biếc chưa từng nhạt phai.
+      </p>
+    </div>
+    <blockquote class="italic text-[11px] text-primary-dark border-l-2 border-primary pl-4 pr-3 py-3 bg-[#fbf9f6] rounded-r-md block leading-relaxed text-justify min-h-[5.5rem] flex items-center mt-auto">
+      "Có ai đó đã bảo người nhút nhát trước con gái là người lương thiện. Và tình yêu nhút nhát là tình yêu chân thành."
+    </blockquote>
+  </div>
+</div>
+
+<!-- Card 3: Ngày Xưa Có Một Chuyện Tình -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/40 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
+  <div class="relative h-52 overflow-hidden bg-cinema-earth flex-shrink-0">
+    <img alt="Ngày Xưa Có Một Chuyện Tình" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBetQHOSg5bNW4ijAK9mMJpz9dWybMkJ9PnDDUWMNqhlsavRbYb3bnp6TLbZriOeRUMjEbWOWq-wfb5pY9hhvrDkTg-YHegQaSjNqmoYoD-gN_iskbJ33aoBcbusK_dAVLQ9dsgXuEFaKVmw9TRu-BF3ZyGSmNlmxQYlsZaWpO5gPCXiHmRVPKpKyPq7TCaQ7SAOZoRxFUD9uSb27aWFiuR-vBZjy1ha6DVtvu1dga4PZh5s8uGkSMPGGaKMZypKXHfLT_3_7KYEc1ZsA">
+    <span class="absolute top-3 left-3 bg-cinema-earth/80 text-soft-sunlight text-[11px] font-bold px-2.5 py-1 rounded">REEL 03 • THANH XUÂN</span>
+  </div>
+  <div class="p-6 flex-1 flex flex-col justify-between">
+    <div class="flex flex-col mb-4">
+      <span class="text-xs font-semibold text-secondary uppercase tracking-wider block mb-1.5">Đạo diễn: Trịnh Đình Lê Minh</span>
+      <h3 class="font-display font-bold text-lg text-cinema-earth group-hover:text-primary transition-colors mb-2.5 min-h-[3.25rem] flex items-center leading-snug">NGÀY XƯA CÓ MỘT CHUYỆN TÌNH</h3>
+      <p class="text-xs text-deep-wood/80 leading-relaxed text-justify min-h-[5.5rem]">
+        Miền quê êm ả dung dị, câu chuyện tình bạn thiêng liêng của Vinh, Phúc và Miền, những rung động đầu đời và lựa chọn dịu dàng của ngưỡng cửa trưởng thành.
+      </p>
+    </div>
+    <blockquote class="italic text-[11px] text-primary-dark border-l-2 border-primary pl-4 pr-3 py-3 bg-[#fbf9f6] rounded-r-md block leading-relaxed text-justify min-h-[5.5rem] flex items-center mt-auto">
+      “Mục tiêu của cuộc sống cuối cùng là tìm kiếm hạnh phúc, bởi vì hạnh phúc không phải là bữa tiệc sẵn sàng dành cho mỗi người.”
+    </blockquote>
+  </div>
+</div>
+
+<!-- Card 4: Tôi Thấy Hoa Vàng Trên Cỏ Xanh -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/40 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
+  <div class="relative h-52 overflow-hidden bg-cinema-earth flex-shrink-0">
+    <img alt="Tôi Thấy Hoa Vàng Trên Cỏ Xanh" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr-Lvj6mlAtCWDK0i5DzeSYvq7tGrG64FWgaZh6TSa-VOYyhyDqWjzPyIx7hhizP4F-ZFgIamw6m_Mkl1yuw6YiawXf6eueV3fFnKa2WTgbUzlKlr0IvQVu1ud80c67HLkx2Ee_mXOYTmRBprcMeXWQ9NmBIm_8_b7qCCMcsvc17pebqygPY5EtIenA12ykticrYUKXlVOJE408ufqT7zCHH0Uap5JEdhg3galaec2bl_qcfvSHSr-oLLu-ojufVoYAw">
+    <span class="absolute top-3 left-3 bg-cinema-earth/80 text-soft-sunlight text-[11px] font-bold px-2.5 py-1 rounded">REEL 04 • ĐỒNG NỘI</span>
+  </div>
+  <div class="p-6 flex-1 flex flex-col justify-between">
+    <div class="flex flex-col mb-4">
+      <span class="text-xs font-semibold text-secondary uppercase tracking-wider block mb-1.5">Đạo diễn: Victor Vũ</span>
+      <h3 class="font-display font-bold text-lg text-cinema-earth group-hover:text-primary transition-colors mb-2.5 min-h-[3.25rem] flex items-center leading-snug">TÔI THẤY HOA VÀNG TRÊN CỎ XANH</h3>
+      <p class="text-xs text-deep-wood/80 leading-relaxed text-justify min-h-[5.5rem]">
+        Cánh đồng hoa vàng bạt ngàn của đất Phú Yên, bầu trời tuổi thơ chan chứa nắng, con tàu xình xịch qua xóm nghèo và tình anh em ruột thịt sâu lắng.
+      </p>
+    </div>
+    <blockquote class="italic text-[11px] text-primary-dark border-l-2 border-primary pl-4 pr-3 py-3 bg-[#fbf9f6] rounded-r-md block leading-relaxed text-justify min-h-[5.5rem] flex items-center mt-auto">
+      "Tình yêu giống như một trò chơi trốn tìm, người trốn thì mong được tìm thấy, còn người tìm thì sợ không thấy người trốn."
+    </blockquote>
+  </div>
+</div></div>
+</div>
+</section>
+<!-- ==========================================
+         4. SECTION: CÓ GÌ Ở MÙA HÈ NÀY? (6 HOẠT ĐỘNG)
+         ========================================== -->
+<section class="py-16 md:py-24 bg-surface-container-low border-y border-[#d7c3ad]/30" id="hoat-dong">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-xs font-bold uppercase tracking-widest text-secondary block mb-2">Trải Nghiệm Đa Giác Quan</span>
+<h2 class="text-3xl md:text-4xl font-display font-bold text-cinema-earth tracking-tight">
+            CÓ GÌ Ở MÙA HÈ NÀY?
+          </h2>
+<div class="w-14 h-1 bg-secondary mx-auto my-3.5 rounded-full"></div>
+<p class="text-deep-wood/80 text-sm md:text-base leading-relaxed">Trọn vẹn 3 hoạt động nghệ thuật và trải nghiệm nổi bật diễn ra xuyên suốt tại <br>White Palace Hoàng Văn Thụ</p>
+</div>
+<!-- 6 Activities Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 md:grid-cols-3"><!-- 01. Triển lãm không gian nghệ thuật & kỷ vật phim -->
+<div class="p-8 rounded-2xl bg-white border border-[#d7c3ad]/40 shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-full">
+  <div>
+    <div class="w-12 h-12 rounded-xl bg-soft-sunlight/40 border border-soft-sunlight text-cinema-earth flex items-center justify-center mb-6">
+      <svg class="w-6 h-6 text-cinema-earth" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+        <path d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </div>
+    <span class="text-[11px] font-bold text-primary uppercase tracking-wider block mb-1">HOẠT ĐỘNG 01 • KHÔNG GIAN BỐI CẢNH</span>
+    <h3 class="font-display font-bold text-lg text-cinema-earth mt-1 mb-3 min-h-[3.5rem] flex items-start leading-snug">
+      01. Triển Lãm Không Gian Nghệ Thuật &amp; Kỷ Vật Phim
+    </h3>
+    <p class="text-xs md:text-sm text-deep-wood/80 leading-relaxed text-justify min-h-[4.5rem]">
+      Tái hiện chi tiết 4 cảnh trí chủ đạo của 4 bộ phim, trưng bày các bản thảo trang viết tay quý hiếm và phục trang gốc của dàn diễn viên.
+    </p>
+  </div>
+  <div class="mt-6 pt-4 border-t border-stone-100 text-xs font-semibold text-secondary flex items-center gap-1.5">
+    <span class="material-symbols-outlined text-[16px]">schedule</span> 09:30 – 20:00 (Cả 2 ngày)
+  </div>
+</div>
+
+<!-- 02. Workshop thủ công -->
+<div class="p-8 rounded-2xl bg-white border border-[#d7c3ad]/40 shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-full">
+  <div>
+    <div class="w-12 h-12 rounded-xl bg-secondary-container/50 border border-secondary/20 text-secondary flex items-center justify-center mb-6">
+      <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+        <path d="M7.848 8.25l1.536.887M7.848 8.25a3 3 0 1 1-5.196-3 3 3 0 0 1 5.196 3Zm0 0l6.656 3.843m-1.536.887l1.536.887m0 0a3 3 0 1 1-5.196 3 3 3 0 0 1 5.196-3Zm0 0l-6.656-3.843m1.536-.887l7.5-4.33a1.5 1.5 0 0 1 2.05.55l1.5 2.598a1.5 1.5 0 0 1-.55 2.05l-7.5 4.33" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </div>
+    <span class="text-[11px] font-bold text-primary uppercase tracking-wider block mb-1">HOẠT ĐỘNG 02 • THỦ CÔNG &amp; SÁNG TẠO</span>
+    <h3 class="font-display font-bold text-lg text-cinema-earth mt-1 mb-3 min-h-[3.5rem] flex items-start leading-snug">
+      02. Workshop Thủ Công: Tự Tay Làm Kính Vạn Hoa
+    </h3>
+    <p class="text-xs md:text-sm text-deep-wood/80 leading-relaxed text-justify min-h-[4.5rem]">
+      Tự tay lắp ráp các thanh lăng kính quang học, xếp đá màu và hạt cườm lấp lánh để tạo nên chiếc kính vạn hoa độc bản của riêng bạn mang về.
+    </p>
+  </div>
+  <div class="mt-6 pt-4 border-t border-stone-100 text-xs font-semibold text-secondary flex items-center gap-1.5">
+    <span class="material-symbols-outlined text-[16px]">schedule</span> Ca sáng 10:00 | Ca chiều 15:30
+  </div>
+</div>
+
+<!-- 03. Rạp chiếu blackbox -->
+<div class="p-8 rounded-2xl bg-white border border-[#d7c3ad]/40 shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-full">
+  <div>
+    <div class="w-12 h-12 rounded-xl bg-primary/20 border border-primary/30 text-cinema-earth flex items-center justify-center mb-6">
+      <svg class="w-6 h-6 text-cinema-earth" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+        <path d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </div>
+    <span class="text-[11px] font-bold text-primary uppercase tracking-wider block mb-1">HOẠT ĐỘNG 03 • ĐIỆN ẢNH VINTAGE</span>
+    <h3 class="font-display font-bold text-lg text-cinema-earth mt-1 mb-3 min-h-[3.5rem] flex items-start leading-snug">
+      03. Rạp Chiếu Những Bộ Phim Nguyễn Nhật Ánh
+    </h3>
+    <p class="text-xs md:text-sm text-deep-wood/80 leading-relaxed text-justify min-h-[4.5rem]">
+      Thưởng thức 4 suất chiếu trọn vẹn trong khán phòng hộp đen cách âm chuẩn rạp thính phòng cao cấp, khơi dậy trọn vẹn từng thước phim giàu chất thơ.
+    </p>
+  </div>
+  <div class="mt-6 pt-4 border-t border-stone-100 text-xs font-semibold text-secondary flex items-center gap-1.5">
+    <span class="material-symbols-outlined text-[16px]">schedule</span> 10:00 • 13:00 • 16:00 • 19:00
+  </div>
+</div></div>
+</div>
+</section>
+<!-- ==========================================
+         5. SECTION: LỊCH TRÌNH 2 NGÀY TÓM TẮT & CTA MUA VÉ
+         ========================================== -->
+<section class="py-16 md:py-24 bg-surface" id="lich-trinh">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="text-xs font-bold uppercase tracking-widest text-primary block mb-2">Two Days Experience</span>
+<h2 class="text-3xl md:text-4xl font-display font-bold text-cinema-earth tracking-tight">
+            LỊCH TRÌNH 2 NGÀY ĐẶC SẮC
+          </h2>
+<div class="w-14 h-1 bg-primary mx-auto my-3.5 rounded-full"></div>
+<p class="text-deep-wood/80 text-sm md:text-base">
+            Chọn ngày trải nghiệm phù hợp với lịch trình và cảm xúc của bạn
+          </p>
+</div>
+<!-- 2 Days Comparison Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-14 items-stretch"><!-- Day 1 Card -->
+<div class="bg-surface-container-low rounded-2xl p-7 border border-[#d7c3ad]/50 shadow-sm relative overflow-hidden flex flex-col justify-between h-full">
+  <div class="absolute top-0 right-0 bg-primary/20 text-cinema-earth text-xs font-bold px-4 py-1.5 rounded-bl-xl uppercase tracking-wider">
+    NGÀY 01
+  </div>
+  <div class="flex flex-col flex-1">
+    <span class="text-xs font-bold text-secondary uppercase tracking-widest block">THỨ BẢY • 16 THÁNG 06</span>
+    <h3 class="text-2xl font-display font-bold text-cinema-earth mt-1 mb-4 min-h-[2.5rem] flex items-center">Điện Ảnh &amp; Acoustic</h3>
+    <ul class="space-y-3 text-sm text-deep-wood/90 mb-6 flex-1 flex flex-col justify-between">
+      <li class="flex items-start gap-2.5 min-h-[44px]">
+        <span class="material-symbols-outlined text-primary text-[18px] mt-0.5 flex-shrink-0">check_circle</span>
+        <span class="leading-relaxed"><strong>09:30 - 20:00:</strong> Khám phá trọn vẹn 4 không gian triển lãm &amp; bối cảnh 35mm</span>
+      </li>
+      <li class="flex items-start gap-2.5 min-h-[44px]">
+        <span class="material-symbols-outlined text-primary text-[18px] mt-0.5 flex-shrink-0">check_circle</span>
+        <span class="leading-relaxed"><strong>10:00 &amp; 15:30:</strong> 2 Ca Workshop tự làm kính vạn hoa tuổi thơ</span>
+      </li>
+      <li class="flex items-start gap-2.5 min-h-[44px]">
+        <span class="material-symbols-outlined text-primary text-[18px] mt-0.5 flex-shrink-0">check_circle</span>
+        <span class="leading-relaxed"><strong>Suốt ngày:</strong> Chiếu rạp 4 bộ phim chuyển thể từ truyện của Nguyễn Nhật Ánh</span>
+      </li>
+      <li class="flex items-center gap-2.5 bg-white/70 -mx-2.5 px-3 py-2.5 rounded-lg border border-[#d7c3ad]/40 min-h-[68px]">
+        <span class="material-symbols-outlined text-primary text-[18px] flex-shrink-0">star</span>
+        <span class="leading-snug"><strong class="text-cinema-earth">20:30 - 22:00:</strong> Điểm nhấn Đêm nhạc mộc Acoustic "Stay For The Music"</span>
+      </li>
+    </ul>
+  </div>
+  <a class="text-xs font-bold text-primary hover:text-primary-dark uppercase tracking-wider inline-flex items-center gap-1 mt-auto pt-2" href="/schedule">
+    Xem chi tiết ngày 01 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+  </a>
+</div>
+<!-- Day 2 Card -->
+<div class="bg-surface-container-low rounded-2xl p-7 border border-[#d7c3ad]/50 shadow-sm relative overflow-hidden flex flex-col justify-between h-full">
+  <div class="absolute top-0 right-0 bg-secondary/20 text-secondary text-xs font-bold px-4 py-1.5 rounded-bl-xl uppercase tracking-wider">
+    NGÀY 02
+  </div>
+  <div class="flex flex-col flex-1">
+    <span class="text-xs font-bold text-secondary uppercase tracking-widest block">CHỦ NHẬT • 17 THÁNG 06</span>
+    <h3 class="text-2xl font-display font-bold text-cinema-earth mt-1 mb-4 min-h-[2.5rem] flex items-center">Giao Lưu Tác Giả &amp; Ký Tặng</h3>
+    <ul class="space-y-3 text-sm text-deep-wood/90 mb-6 flex-1 flex flex-col justify-between">
+      <li class="flex items-start gap-2.5 min-h-[44px]">
+        <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5 flex-shrink-0">check_circle</span>
+        <span class="leading-relaxed"><strong>09:30 - 20:00:</strong> Khám phá trọn vẹn 4 không gian triển lãm &amp; bối cảnh 35mm</span>
+      </li>
+      <li class="flex items-start gap-2.5 min-h-[44px]">
+        <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5 flex-shrink-0">check_circle</span>
+        <span class="leading-relaxed"><strong>Suốt ngày:</strong> Chiếu rạp 4 bộ phim chuyển thể từ truyện của Nguyễn Nhật Ánh</span>
+      </li>
+      <li class="flex items-center gap-2.5 bg-white/70 -mx-2.5 px-3 py-2.5 rounded-lg border border-[#d7c3ad]/40 min-h-[68px]">
+        <span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0">verified</span>
+        <span class="leading-snug"><strong class="text-cinema-earth">15:00 - 17:30:</strong> Tọa đàm &amp; Ký tặng sách đặc biệt cùng nhà văn Nguyễn Nhật Ánh</span>
+      </li>
+      <li class="flex items-start gap-2.5 min-h-[44px]">
+        <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5 flex-shrink-0">check_circle</span>
+        <span class="leading-relaxed"><strong>19:30 - 22:30:</strong> Đêm bế mạc, giao lưu đoàn phim &amp; quà tặng tri ân</span>
+      </li>
+    </ul>
+  </div>
+  <a class="text-xs font-bold text-secondary hover:text-cinema-earth uppercase tracking-wider inline-flex items-center gap-1 mt-auto pt-2" href="/schedule">
+    Xem chi tiết ngày 02 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+  </a>
+</div></div>
+<!-- Banner Box CTA Dẫn Sang Vé & Cửa Hàng -->
+<div class="rounded-3xl bg-gradient-to-r from-[#2a2118] via-[#3a2c20] to-[#2a2118] text-white px-8 md:px-14 py-10 md:py-12 shadow-xl border border-white/10 relative overflow-hidden">
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 text-center lg:text-left">
+<div class="max-w-xl flex flex-col justify-center">
+<span class="text-xs font-bold uppercase tracking-widest text-soft-sunlight block mb-2">Số Lượng Giới Hạn Theo Khung Giờ</span>
+<h3 class="text-2xl md:text-3xl font-display font-bold text-white mb-2 leading-snug">
+                Đặt Vé Ngay Để Không Bỏ Lỡ Mùa Hè Ký Ức!
+              </h3>
+<p class="text-xs md:text-sm text-stone-300 leading-relaxed whitespace-nowrap">Trải nghiệm 4 không gian điện ảnh hoài niệm và các hoạt động nghệ thuật đặc sắc.</p>
+</div>
+<div class="flex flex-wrap sm:flex-nowrap items-center justify-center gap-4 flex-shrink-0">
+<a class="w-56 sm:w-60 py-3.5 px-6 bg-primary hover:bg-primary-dark text-white font-bold text-sm tracking-wider uppercase rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2 text-center" href="/tickets">
+<span class="material-symbols-outlined text-[20px]">local_activity</span>
+<span class="">MUA VÉ <br>TRẢI NGHIỆM</span>
+</a>
+<a class="w-56 sm:w-60 py-3.5 px-6 bg-white/10 hover:bg-white/20 text-[#FAF8F5] border border-white/20 font-bold text-sm tracking-wider uppercase rounded-xl transition-all transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2 text-center" href="/merchandise">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span class="">KHÁM PHÁ <br>CỬA HÀNG</span>
+</a>
+</div>
+</div>
+<div class="absolute -right-16 -bottom-16 w-64 h-64 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- ==========================================
+       6. FOOTER CHUẨN THỐNG NHẤT
+       ========================================== -->
+<footer class="w-full bg-[#1C1917] text-stone-300 pt-12 pb-8 border-t border-stone-800">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-stone-800">
+      <!-- Cột 1 (Thương hiệu LENS) -->
+      <div>
+        <div class="flex items-center gap-3">
+          <img class="w-10 h-10 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VUMvj-VnuxZnfJLYQosHgF4abbreQR1K7IRcF9oe41l3dDxwJAVX_K5iS4mBsfw2hgbH5-R7ZngHw7GE5MLgRdIj7OF1hgcfS4Mb86F4xvLFxNuy_42LUitFtNsA_DlosVAcdrZGA1bI-s9imxOLoHXnJ8n1h0XtxtPVNW2brr0Fao17WERO0jcy-2F1eFdPSw6ym0xGDf65r6608nh-SoWb4iXYJcqppJmL-SHxwnBGlHkw0kHyd9zg" alt="Logo LENS">
+          <div>
+            <div class="font-['Epilogue'] font-bold text-lg text-white tracking-wider leading-none">LENS</div>
+            <div class="text-xs text-stone-400 font-medium mt-1">MÙA HÈ ƠI, Ở LẠI</div>
+          </div>
+        </div>
+        <p class="text-xs font-semibold tracking-wider text-[#D97706] mt-3 uppercase">FRAME THE MOMENT. TELL THE STORY.</p>
+        <p class="text-xs text-stone-400 leading-relaxed mt-2">
+          Chuỗi sự kiện trải nghiệm điện ảnh ngoài trời và triển lãm văn hóa hoài niệm được kiến tạo bởi LENS Creative Event Agency.
+        </p>
+        <div class="flex items-center gap-3 mt-4 text-stone-400">
+          <a href="#" aria-label="Facebook" class="hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-lg">share</span>
+          </a>
+          <a href="#" aria-label="Instagram" class="hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-lg">photo_camera</span>
+          </a>
+          <a href="#" aria-label="YouTube" class="hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-lg">movie</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Cột 2 (ĐỊA ĐIỂM TỔ CHỨC) -->
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-3">ĐỊA ĐIỂM TỔ CHỨC</h4>
+        <p class="text-xs font-semibold text-stone-200">White Palace Hoàng Văn Thụ</p>
+        <p class="text-xs text-stone-400 mt-1 leading-relaxed">194 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, TP. Hồ Chí Minh</p>
+        <p class="text-xs text-stone-400 mt-2">Giờ mở cửa: 09:30 – 22:30 Hàng ngày (16 &amp; 17/06/2027)</p>
+        <p class="text-xs text-stone-400 mt-1">Hotline: (+84) 28 3822 9999</p>
+        <p class="text-xs text-stone-400 mt-1">Email: contact@lenscreative.vn</p>
+      </div>
+
+      <!-- Cột 3 (ĐIỀU HƯỚNG SỰ KIỆN) -->
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-3">ĐIỀU HƯỚNG SỰ KIỆN</h4>
+        <div class="flex flex-col space-y-2">
+          <a href="/" class="text-xs text-stone-400 hover:text-[#D97706] transition-colors">Trang Chủ</a>
+          <a href="/films" class="text-xs text-stone-400 hover:text-[#D97706] transition-colors">4 Bộ Phim</a>
+          <a href="/schedule" class="text-xs text-stone-400 hover:text-[#D97706] transition-colors">Lịch Trình Chi Tiết 2 Ngày</a>
+          <a href="/merchandise" class="text-xs text-stone-400 hover:text-[#D97706] transition-colors">Cửa Hàng Quà Lưu Niệm</a>
+          <a href="/about" class="text-xs text-stone-400 hover:text-[#D97706] transition-colors">Về LENS Creative</a>
+        </div>
+      </div>
+
+      <!-- Cột 4 (QUY ĐỊNH & HỖ TRỢ) -->
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-3">QUY ĐỊNH &amp; HỖ TRỢ</h4>
+        <div class="flex flex-col space-y-2">
+          <a href="#" class="text-xs text-stone-400 hover:text-[#D97706] transition-colors">Điều Khoản &amp; Đổi Trả Vé</a>
+          <a href="#" class="text-xs text-stone-400 hover:text-[#D97706] transition-colors">Hướng Dẫn Check-in Sự Kiện</a>
+          <a href="#" class="text-xs text-stone-400 hover:text-[#D97706] transition-colors">Quy Tắc Bản Quyền &amp; Tác Phẩm</a>
+          <a href="#" class="text-xs text-stone-400 hover:text-[#D97706] transition-colors">Câu Hỏi Thường Gặp (FAQ)</a>
+          <a href="#" class="text-xs text-stone-400 hover:text-[#D97706] transition-colors">Chính Sách Bảo Mật</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footnote -->
+    <div class="pt-6 flex flex-col md:flex-row justify-between items-center text-[11px] text-stone-500 gap-4">
+      <div class="">
+        © 2027 LENS CREATIVE EVENT COMPANY. TẤT CẢ QUYỀN ĐƯỢC BẢO LƯU.
+      </div>
+      <div class="">
+        CHÍNH SÁCH BẢO MẬT • ĐIỀU KHOẢN DỊCH VỤ • AN AUDIOVISUAL HERITAGE INITIATIVE
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
